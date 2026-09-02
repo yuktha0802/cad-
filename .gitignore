@@ -1,0 +1,61 @@
+# Local virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Generated/runtime outputs
+outputs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+.eggs/
+
+# Node dependencies & build
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+dist/
+build/
+.next/
+.vite/
+*.tsbuildinfo
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# IDE / Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+tmp/
+*.tmp
+*.temp
+*.bak
