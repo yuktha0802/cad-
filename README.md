@@ -1,205 +1,135 @@
 <div align="center">
 
-<img src="assets/text-to-cad-demo.gif" alt="Demo of the CAD skill generating and previewing CAD geometry" width="100%">
+# 🦅 TorqWings Design Studio
+### Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System
 
-<br>
-
-<pre>
- ██████╗ █████╗ ██████╗       ███████╗██╗  ██╗██╗██╗     ██╗     ███████╗
-██╔════╝██╔══██╗██╔══██╗      ██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝
-██║     ███████║██║  ██║      ███████╗█████╔╝ ██║██║     ██║     ███████╗
-██║     ██╔══██║██║  ██║      ╚════██║██╔═██╗ ██║██║     ██║     ╚════██║
-╚██████╗██║  ██║██████╔╝      ███████║██║  ██╗██║███████╗███████╗███████║
- ╚═════╝╚═╝  ╚═╝╚═════╝       ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
-</pre>
-
-A skills library for CAD, robotics, and hardware design agents
-
-[Docs](https://www.cadskills.xyz) | [Demo](https://demo.cadskills.xyz)
-
-[![Join Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5FGB9DwJYU)
-[![GitHub stars](https://img.shields.io/github/stars/earthtojake/text-to-cad?style=for-the-badge&logo=github&label=Stars)](https://github.com/earthtojake/text-to-cad/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![Follow @earthtojake](https://img.shields.io/badge/Follow-%40earthtojake-000000?style=for-the-badge&logo=x)](https://x.com/earthtojake)
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](skills/cad/requirements.txt)
-[![STEP](https://img.shields.io/badge/STEP-Export-4A5568?style=for-the-badge)](skills/cad/SKILL.md)
-[![STL](https://img.shields.io/badge/STL-Export-4A5568?style=for-the-badge)](skills/cad/SKILL.md)
-[![3MF](https://img.shields.io/badge/3MF-Export-4A5568?style=for-the-badge)](skills/cad/SKILL.md)
-[![URDF](https://img.shields.io/badge/URDF-Robots-6B46C1?style=for-the-badge)](skills/urdf/SKILL.md)
-[![SDF](https://img.shields.io/badge/SDF-Simulation-6B46C1?style=for-the-badge)](skills/sdf/SKILL.md)
-[![SRDF](https://img.shields.io/badge/SRDF-MoveIt2-6B46C1?style=for-the-badge)](skills/srdf/SKILL.md)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](pyproject.toml)
+[![STEP](https://img.shields.io/badge/STEP-ISO%2010303-4A5568?style=for-the-badge)](TORQWINGS_DESIGN_STUDIO.md)
+[![Manufacturing](https://img.shields.io/badge/Manufacturing-DXF%20%2F%20SVG%20%2F%20STL-green?style=for-the-badge)](TORQWINGS_DESIGN_STUDIO.md)
+[![Release Gate](https://img.shields.io/badge/Release%20Gate-Automated%20QA-orange?style=for-the-badge)](TORQWINGS_STATUS.md)
+
+[Canonical Documentation](TORQWINGS_DESIGN_STUDIO.md) | [Architecture](TORQWINGS_ARCHITECTURE.md) | [Pipeline](TORQWINGS_PIPELINE.md) | [Status](TORQWINGS_STATUS.md)
 
 </div>
 
-# CAD Skills
+---
 
-CAD Skills is a library of agent skills for generating, inspecting, sourcing,
-slicing, and handing off CAD and robot-description artifacts from local project
-files.
+## 📌 Executive Summary
 
-## 🧰 Skills
+**TorqWings Design Studio** is an integrated engineering-driven aircraft CAD, structural synthesis, and prototype manufacturing platform. The platform automates the transition from multi-disciplinary conceptual UAV/aircraft engineering design specifications into complete, verified 3D CAD solid models, synthesized internal airframe structures, classified digital manufacturing packages (laser cutting, 3D printing), deterministic assembly instructions, interactive 3D visualization, and strict final prototype release gates.
 
-Install the library to give agents focused workflows for CAD, fabrication,
-robot description files, simulation, and local review.
+The system serves as **Part 2** of the end-to-end TorqWings aerospace workflow, ingesting engineering requirements produced by **Part 1** (Engineering Design & Requirement Synthesis) and transforming them into production-ready physical prototype data packages.
 
-| Skill        | Summary                                                                                                                                            | Source                                              |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| CAD          | Creates and edits CAD models from plain-language or image requests, with STEP as the main output along with options to export to STL, 3MF and GLB. | [skills/cad](skills/cad/SKILL.md)                   |
-| CAD Viewer   | Shows local browser previews for CAD, G-code, and robot files.                                                                                     | [skills/cad-viewer](skills/cad-viewer/SKILL.md)     |
-| step.parts   | Finds off-the-shelf STEP parts like screws, bearings, motors, and connectors.                                                                      | [skills/step-parts](skills/step-parts/SKILL.md)     |
-| DXF          | Creates 2D DXF drawings like profiles, templates, gaskets, and cut layouts from Python sources or CAD geometry.                                    | [skills/dxf](skills/dxf/SKILL.md)                   |
-| URDF         | Writes robot structure files with links, joints, limits, inertials, and meshes.                                                                    | [skills/urdf](skills/urdf/SKILL.md)                 |
-| SRDF         | Adds MoveIt planning groups, end effectors, poses, and collision rules to a URDF.                                                                  | [skills/srdf](skills/srdf/SKILL.md)                 |
-| SDF          | Creates simulator models and worlds with frames, physics, sensors, and lights.                                                                     | [skills/sdf](skills/sdf/SKILL.md)                   |
-| SendCutSend  | Checks DXF and STEP files before upload to SendCutSend.                                                                                            | [skills/sendcutsend](skills/sendcutsend/SKILL.md)   |
-| G-code       | Slices supported mesh files into validated, printer-profiled FDM `.gcode` with real slicer CLIs.                                                   | [skills/gcode](skills/gcode/SKILL.md)               |
-| Bambu Labs   | Dry-runs, uploads, and cautiously starts local Bambu Lab print jobs from validated `.gcode`.                                                       | [skills/bambu-labs](skills/bambu-labs/SKILL.md)     |
-| Implicit CAD | Creates browser-native implicit CAD models using GLSL signed-distance fields and CAD Viewer raymarch rendering. Experimental.                      | [skills/implicit-cad](skills/implicit-cad/SKILL.md) |
-
-## 💻 Installation
-
-For production use, install or clone from `main`; that branch contains the
-generated skill/plugin outputs needed by provider installers.
-
-### Skills
-
-Install CAD Skills with the Skills CLI:
-
-```bash
-npx skills install earthtojake/text-to-cad
+```
+PART 1: Engineering Design & Requirement Synthesis
+        ↓ (Engineering Specification / JSON / Markdown)
+PART 2: TorqWings Design Studio
+        ↓ Document Ingestion & Parameter Extraction
+        ↓ Normalized Engineering Parameter Model (EXPLICIT / DERIVED / CONFLICT)
+        ↓ Outer Mold Line (OML) Aircraft CAD Solid Generation
+        ↓ Internal Structural Synthesis (Formers, Longerons, Ribs, Spars)
+        ↓ Digital Manufacturing Decomposition (Laser DXF/SVG, 3D Print STL)
+        ↓ Assembly & Interlocking Tab/Slot Joint Synthesis
+        ↓ Dimensional & Configuration Validation
+        ↓ Formal Engineering Review Engine
+        ↓ Prototype Build Package & Shop-Floor SOP (BOM, build_instructions.md)
+        ↓ 3D Multi-Mode Build Visualization (Assembled, Exploded, Structure, Mfg)
+        ↓ Final Prototype Release Gate QA (release_manifest.json)
+        ↓
+Physical Prototype Fabrication (Laser Cutting, 3D Printing, Bench Assembly)
 ```
 
-This is the preferred installation path. It installs the individual skills
-directly for supported agents.
+---
 
-### Plugins
+## 🗂️ Canonical Documentation
 
-Provider-native plugin installs are also available for Codex and Claude Code:
+| Document | Purpose |
+| :--- | :--- |
+| **[TORQWINGS_DESIGN_STUDIO.md](TORQWINGS_DESIGN_STUDIO.md)** | **Primary Canonical Engineering Document:** Comprehensive 26-section specification covering system overview, identity, workflow, engines, FW-007 baseline, warnings, limitations, and boundaries. |
+| **[TORQWINGS_ARCHITECTURE.md](TORQWINGS_ARCHITECTURE.md)** | **System Architecture:** Detailed component breakdown of `cadpy` engines, frontend viewer, classes, functions, inputs, outputs, and dependencies. |
+| **[TORQWINGS_PIPELINE.md](TORQWINGS_PIPELINE.md)** | **Pipeline Specification:** Stage-by-stage guide covering INPUT, PROCESS, OUTPUT, VALIDATION, and TRACEABILITY for all 13 pipeline phases. |
+| **[TORQWINGS_STATUS.md](TORQWINGS_STATUS.md)** | **Development & Acceptance Status:** Phase 1–13 completion sign-off and FW-007 acceptance campaign test reports. |
 
-```bash
-# Codex
-codex plugin marketplace add earthtojake/text-to-cad
-codex plugin add cad@text-to-cad
+---
+
+## ✈️ Verified Baseline: FW-007 Test Aircraft
+
+The platform is continuously verified against the **FW-007** baseline aircraft (Twin-Boom / Conventional Fixed-Wing UAV):
+* **Wingspan:** $2000.0\text{ mm}$ ($2.0\text{ m}$)
+* **Fuselage Length:** $1500.0\text{ mm}$ ($1.5\text{ m}$)
+* **Horizontal Tail Span:** $500.0\text{ mm}$ ($0.5\text{ m}$)
+* **Vertical Tail Height:** $400.0\text{ mm}$ ($0.4\text{ m}$)
+* **Propulsion:** APC $12 \times 6\text{E}$ propeller ($304.8\text{ mm}$ diameter), tractor configuration.
+* **Synthesized Airframe Structure:** $48$ individually modeled structural solids.
+* **Classified Manufacturing Parts:** $48$ physical parts ($47$ laser-cut balsa/aeroply parts + $1$ 3D-printed PETG/PLA wing bracket).
+* **Structural Joints:** $69$ interlocking tab-and-slot joint mates.
+* **Laser Cutting Stock:** $3$ nested $900 \times 600\text{ mm}$ sheets.
+* **Assembly Steps:** $5$ sequential assembly stages documented in `build_instructions.md`.
+* **Release Gate State:** `READY_WITH_WARNINGS` (Preserves known Part 1 MTOW requirement conflict of $5.5\text{ kg}$ vs $11.0\text{ kg}$).
+
+---
+
+## ⚠️ Important Engineering Boundaries
+
+> [!CAUTION]
+> **What the System Does NOT Claim:**
+> * **No CFD / Aerodynamic Optimization:** Geometry is generated from input specifications; it does not perform fluid dynamics simulation.
+> * **No FEA / Structural Safety Certification:** Structural solids are geometrically synthesized; finite element stress analysis must be performed in external FEA packages.
+> * **No Airworthiness or Flight Certification:** Prototype-ready indicates validation for benchtop digital manufacturing; **it does not certify airworthiness or manned flight safety**.
+> * **No Synthetic Value Guessing:** Conflicting or omitted requirements remain `CONFLICT` or `UNKNOWN` and are explicitly reported.
+
+---
+
+## 💻 Quick Start & Usage
+
+### 1. Environment Setup
+```powershell
+# Create virtual environment and install CAD dependencies
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -e packages/cadpy
 ```
 
-```bash
-# Claude Code
-claude plugin marketplace add earthtojake/text-to-cad
-claude plugin install cad@text-to-cad
+### 2. Execute End-to-End Pipeline
+```python
+from cadpy.pipeline import DesignStudioPipeline
+
+pipeline = DesignStudioPipeline()
+result = pipeline.run(
+    specification_path="models/TW-FW-20260921-215327/specification.json",
+    output_dir="models/TW-FW-20260921-215327/v1"
+)
+
+print(f"Release Status: {result.release_manifest.release_status}")
 ```
 
-Restart your agent if newly installed skills do not appear. For local
-development, branch from `develop`, open PRs against `develop`, and use the symlink
-workflow in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## 📸 Screenshots
-
-<table>
-  <tr>
-    <td width="33%">
-      <a href="./assets/text-to-cad-demo.gif">
-        <img src="./assets/text-to-cad-demo.gif" alt="CAD skill demo showing generated geometry in CAD Viewer" width="100%">
-      </a>
-      <a href="./skills/cad/SKILL.md"><strong>CAD</strong></a>
-    </td>
-    <td width="33%">
-      <a href="./assets/urdf-demo.gif">
-        <img src="./assets/urdf-demo.gif" alt="URDF skill demo showing robot description output in CAD Viewer" width="100%">
-      </a>
-      <a href="./skills/urdf/SKILL.md"><strong>URDF</strong></a>
-    </td>
-    <td width="33%">
-      <a href="./assets/srdf-moveit2-demo.gif">
-        <img src="./assets/srdf-moveit2-demo.gif" alt="SRDF MoveIt2 skill demo showing inverse kinematics in CAD Viewer" width="100%">
-      </a>
-      <a href="./skills/srdf/SKILL.md"><strong>SRDF / MoveIt2</strong></a>
-    </td>
-  </tr>
-</table>
-
-## 🧪 Benchmarks
-
-The repo stores heavyweight assets in `assets/**` and `benchmarks/**` through Git LFS and excludes those trees from default LFS pulls so lightweight clones do not fetch GIF assets. Benchmark markdown remains normal Git for readable diffs. To hydrate only the benchmark assets locally, run:
-
+### 3. Launch Design Studio / CAD Viewer Frontend
 ```bash
-git lfs pull --include="benchmarks/**"
+npm --prefix viewer install
+npm --prefix viewer run dev -- --host 127.0.0.1
 ```
+Open the browser at `http://127.0.0.1:5173/?dir=models&file=TW-FW-20260921-215327/TW-FW-20260921-215327_complete_aircraft.step`.
 
-<table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Target</th>
-      <th>Prompt</th>
-      <th>Output</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td><a href="benchmarks/01-rectangular-calibration-block.md">Rectangular calibration block with four holes</a></td>
-      <td>Create a centered 100 x 60 x 20 mm block with four 8 mm vertical through-holes. Add only a 2 mm chamfer on the top outer perimeter.</td>
-      <td><img src="benchmarks/benchmark_01_rectangular_calibration_block.gif" alt="Rectangular calibration block orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td><a href="benchmarks/02-circular-flange.md">Circular flange with bolt-hole pattern</a></td>
-      <td>Create an 80 mm diameter, 10 mm thick circular flange with a 30 mm central through-bore. Add six 6 mm through-holes on a 60 mm bolt circle and fillet the outside circular edges.</td>
-      <td><img src="benchmarks/benchmark_02_circular_flange.gif" alt="Circular flange orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td><a href="benchmarks/03-l-bracket.md">L-bracket with gussets and two hole directions</a></td>
-      <td>Create an L-bracket from a base plate and rear vertical plate. Add vertical base holes, horizontal back-plate holes, two triangular gussets, and a filleted base/back transition.</td>
-      <td><img src="benchmarks/benchmark_03_l_bracket.gif" alt="L-bracket orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td><a href="benchmarks/04-stepped-shaft-keyway.md">Stepped shaft with keyway</a></td>
-      <td>Create a 120 mm shaft along X with 20/30/20 mm diameter stepped sections. Add end chamfers and a shallow rectangular keyway on top of the middle section.</td>
-      <td><img src="benchmarks/benchmark_04_stepped_shaft_keyway.gif" alt="Stepped shaft orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td><a href="benchmarks/05-open-top-electronics-enclosure.md">Open-top electronics enclosure with bosses</a></td>
-      <td>Create a hollow open-top enclosure with 3 mm walls and floor. Add four internal standoffs with centered blind holes and 2 mm outside vertical corner fillets.</td>
-      <td><img src="benchmarks/benchmark_05_open_top_electronics_enclosure.gif" alt="Open-top electronics enclosure orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td><a href="benchmarks/06-clevis-bracket-lightening-cutouts.md">Aerospace-style clevis bracket with lightening cutouts</a></td>
-      <td>Create a symmetric clevis bracket with a base plate, two rounded lugs, base mounting holes, and a horizontal lug bore. Add triangular lightening cutouts, reinforcing ribs, and rounded transitions.</td>
-      <td><img src="benchmarks/benchmark_06_clevis_bracket_lightening_cutouts.gif" alt="Clevis bracket orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td><a href="benchmarks/07-radial-engine-cylinder.md">Radial-engine-style cylinder with cooling fins</a></td>
-      <td>Create a vertical engine-cylinder form with a central barrel, 12 cooling fins, a base flange, and a top cap. Add a 35 degree angled spark-plug boss with a coaxial through-hole.</td>
-      <td><img src="benchmarks/benchmark_07_radial_engine_cylinder.gif" alt="Radial-engine-style cylinder orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td><a href="benchmarks/08-centrifugal-impeller.md">Centrifugal impeller with backward-curved blades</a></td>
-      <td>Create a centrifugal impeller with a backplate, hub, and through-bore. Add 12 fused backward-curved blades sweeping about 45 degrees from root to tip.</td>
-      <td><img src="benchmarks/benchmark_08_centrifugal_impeller.gif" alt="Centrifugal impeller orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td><a href="benchmarks/09-spiral-staircase.md">Spiral staircase with helical handrail</a></td>
-      <td>Create a miniature spiral staircase with a central column, base disk, and 20 rising wedge treads. Add a one-revolution helical handrail and vertical balusters at the tread outer ends.</td>
-      <td><img src="benchmarks/benchmark_09_spiral_staircase.gif" alt="Spiral staircase orbit gif" width="220"></td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td><a href="benchmarks/10-planetary-gear-stage.md">Simplified planetary gear stage</a></td>
-      <td>Create a flat planetary gear assembly with separate sun, planet, ring, carrier, and pin bodies. Use simplified trapezoidal teeth and place three planets around the sun on a 42 mm radius circle.</td>
-      <td><img src="benchmarks/benchmark_10_planetary_gear_stage.gif" alt="Planetary gear stage orbit gif" width="220"></td>
-    </tr>
-  </tbody>
-</table>
+---
 
-## 🛠️ Contributing
+## 🧰 Underlying Skills & Agent Capabilities
 
-Development happens from the `develop` branch; open PRs against `develop`, not `main`.
-For local contribution workflow, skill linking, and validation guidance, see
-[CONTRIBUTING.md](CONTRIBUTING.md).
+TorqWings Design Studio is built upon modular CAD, robotics, and manufacturing agent skills located in `skills/`:
+
+| Skill | Description | Location |
+| :--- | :--- | :--- |
+| **CAD** | Parametric 3D solid modeling kernel with STEP, STL, 3MF, and GLB export. | [`skills/cad`](skills/cad/SKILL.md) |
+| **CAD Viewer** | Interactive browser workbench for 3D inspection and review. | [`skills/cad-viewer`](skills/cad-viewer/SKILL.md) |
+| **DXF** | 2D CAD profile generator for laser, waterjet, and plasma cutting. | [`skills/dxf`](skills/dxf/SKILL.md) |
+| **G-code** | Mesh slicing and toolpath generation for FDM 3D printers. | [`skills/gcode`](skills/gcode/SKILL.md) |
+| **URDF / SRDF / SDF** | Robot kinematics, physics, and MoveIt2 simulation models. | [`skills/urdf`](skills/urdf/SKILL.md) |
+
+---
+
+## 👥 Organization
+
+* **Project:** TorqWings Design Studio
+* **Team:** TorqWings Team
+* **Domain:** `torqwings.com`
+* **License:** MIT License
