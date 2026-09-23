@@ -1,21 +1,21 @@
-# TorqWings Design Studio — System Architecture
+# TorqWings CAD Studio — System Architecture
 
-This document describes the actual, implemented architecture of **TorqWings Design Studio (Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System)**.
+This document describes the actual, implemented architecture of **TorqWings CAD Studio (Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System)**.
 
 ---
 
 ## 1. System Overview
 
-TorqWings Design Studio is structured as a modular Python and TypeScript/React platform. The backend runtime (`cadpy`) provides the core aerospace parameter normalization, parametric CAD generation, structural synthesis, digital manufacturing decomposition, revision management, and release gate validation. The frontend runtime (`viewer` / `cadjs`) provides interactive 3D WebGL visualization, tree inspection, and exploded build guidance.
+TorqWings CAD Studio is structured as a modular Python and TypeScript/React platform. The backend runtime (`cadpy`) provides the core aerospace parameter normalization, parametric CAD generation, structural synthesis, digital manufacturing decomposition, revision management, and release gate validation. The frontend runtime (`viewer` / `cadjs`) provides interactive 3D WebGL visualization, tree inspection, and exploded build guidance.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                           TORQWINGS DESIGN STUDIO                               │
+│                             TORQWINGS CAD STUDIO                                │
 │                                                                                 │
 │   ┌─────────────────────────────────────────────────────────────────────────┐   │
 │   │                          Frontend Layer (viewer/)                       │   │
 │   │   • React / Vite Web Application                                        │   │
-│   │   • CAD Viewer & Design Studio Workbench UI                             │   │
+│   │   • CAD Viewer & CAD Studio Workbench UI                                │   │
 │   │   • cadjs Rendering Engine (Three.js / WebGL / B-Rep Topology)          │   │
 │   │   • Multi-mode Visualizer (Assembled, Exploded, Structure, Mfg)         │   │
 │   └────────────────────────────────────▲────────────────────────────────────┘   │
@@ -177,7 +177,7 @@ TorqWings Design Studio is structured as a modular Python and TypeScript/React p
 
 ---
 
-### 2.12. Frontend Web Application (CAD Viewer / Design Studio)
+### 2.12. Frontend Web Application (CAD Viewer / CAD Studio)
 * **Path:** [`viewer/`](file:///c:/Users/samyuktha/OneDrive/Documents/text-to-cad-main/viewer/)
 * **Responsibility:** Interactive web-based 3D model inspection, assembly tree exploration, exploded view controls, face/edge selection, and manufacturing review.
 * **Tech Stack:** React 18, Vite, Three.js, `@torqwings/cadjs`, TailwindCSS / Vanilla CSS.

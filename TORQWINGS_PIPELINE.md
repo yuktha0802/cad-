@@ -1,6 +1,6 @@
-# TorqWings Design Studio — Complete Pipeline Specification
+# TorqWings CAD Studio — Complete Pipeline Specification
 
-This document details the complete 13-stage automated execution pipeline of **TorqWings Design Studio (Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System)**.
+This document details the complete 13-stage automated execution pipeline of **TorqWings CAD Studio (Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System)**.
 
 ---
 

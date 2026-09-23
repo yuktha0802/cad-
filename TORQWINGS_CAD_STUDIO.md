@@ -1,11 +1,11 @@
-# TorqWings Design Studio
+# TorqWings CAD Studio
 ## Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System
 
 ---
 
 ## 1. Project Overview
 
-**TorqWings Design Studio** is an integrated engineering-driven aircraft CAD, structural synthesis, and prototype manufacturing platform. The platform automates the transition from multi-disciplinary conceptual UAV/aircraft engineering design specifications into complete, verified 3D CAD solid models, synthesized internal structures, classified digital manufacturing packages (laser cutting, 3D printing), deterministic assembly instructions, interactive 3D visualization, and strict final prototype release gates.
+**TorqWings CAD Studio** is an integrated engineering-driven aircraft CAD, structural synthesis, and prototype manufacturing platform. The platform automates the transition from multi-disciplinary conceptual UAV/aircraft engineering design specifications into complete, verified 3D CAD solid models, synthesized internal structures, classified digital manufacturing packages (laser cutting, 3D printing), deterministic assembly instructions, interactive 3D visualization, and strict final prototype release gates.
 
 The system serves as **Part 2** of the end-to-end TorqWings aerospace workflow, ingesting engineering requirements produced by **Part 1** (Engineering Design & Requirement Synthesis) and transforming them into production-ready physical prototype data packages.
 
@@ -18,7 +18,7 @@ The system serves as **Part 2** of the end-to-end TorqWings aerospace workflow, 
                                        ▼ (Engineering Specification / JSON / Markdown)
 +-------------------------------------------------------------------------------+
 |                                    PART 2                                     |
-|                            TorqWings Design Studio                            |
+|                             TorqWings CAD Studio                              |
 |                                                                               |
 |  Document Ingestion ──► Requirement Extraction ──► Normalized Engineering Model |
 |                                                               │               |
@@ -59,7 +59,7 @@ The system serves as **Part 2** of the end-to-end TorqWings aerospace workflow, 
 
 ## 2. Project Identity
 
-* **Project Name:** TorqWings Design Studio
+* **Project Name:** TorqWings CAD Studio
 * **Platform Component:** Part 2 — Engineering Specification → Prototype-Ready Aircraft CAD System
 * **Organization / Team:** TorqWings Team
 * **Domain:** `torqwings.com`
@@ -76,7 +76,7 @@ The TorqWings engineering pipeline separates aircraft design into two distinct, 
    * Synthesizes mission profiles, aerodynamic targets, propulsion selection, mass estimates, and stability boundaries.
    * Outputs a structured **Engineering Specification** (`specification.json`, `specification.md`, or engineering datasheets like `FW-007_ENGINEERING_DATASHEET.md`).
 
-2. **Part 2 — TorqWings Design Studio (This System):**
+2. **Part 2 — TorqWings CAD Studio (This System):**
    * Ingests the raw specification documents and parses them into a **Normalized Engineering Parameter Model**.
    * Constructs fully parametric, watertight B-Rep CAD solid geometry (`.step`, `.glb`).
    * Synthesizes the internal airframe skeleton (spars, ribs, bulkheads/formers, stringers, motor firewalls, wing-fuselage attachment joints).
@@ -87,7 +87,7 @@ The TorqWings engineering pipeline separates aircraft design into two distinct, 
 
 ## 4. Current Architecture
 
-TorqWings Design Studio consists of modular, decoupled components across backend services, core modeling packages, and frontend web applications:
+TorqWings CAD Studio consists of modular, decoupled components across backend services, core modeling packages, and frontend web applications:
 
 ```
 text-to-cad-main/
@@ -107,7 +107,7 @@ text-to-cad-main/
 │   │       └── release_gate.py      # Cross-stage QA & final release gate engine
 │   ├── cadjs/                  # Shared TypeScript/JavaScript CAD rendering runtime
 │   └── implicitjs/             # Standalone GLSL implicit CAD raymarching engine
-├── viewer/                     # Interactive CAD Viewer & Design Studio web frontend
+├── viewer/                     # Interactive CAD Viewer & CAD Studio web frontend
 ├── skills/                     # Agent execution skills (CAD, DXF, G-code, Bambu Lab, etc.)
 ├── models/                     # Shared catalog of generated CAD and prototype fixtures
 ├── tests/                      # Python & JavaScript test suites
@@ -118,7 +118,7 @@ text-to-cad-main/
 
 ## 5. Complete Pipeline
 
-The automated Design Studio pipeline executes sequentially across 13 verified phases:
+The automated CAD Studio pipeline executes sequentially across 13 verified phases:
 
 1. **Phase 1 — Architecture Foundation:** System setup, logging, geometry kernel bindings, and validation frameworks.
 2. **Phase 2 — Aircraft Geometry Foundation:** Parametric wing, fuselage, empennage (horizontal/vertical tail), nacelle, and propulsion OML modeling.
@@ -127,7 +127,7 @@ The automated Design Studio pipeline executes sequentially across 13 verified ph
 5. **Phase 5 — Structural Synthesis:** Parametric generation of formers, longerons, wing ribs, wing spars, tail ribs/spars, and mounting hardpoints.
 6. **Phase 6 — Manufacturing Generation:** Decomposition into laser-cut planar profiles (DXF/SVG), 3D-printable brackets (STL), sheet nesting, and BOM generation.
 7. **Phase 7 — End-to-End Pipeline Integration:** Unified context manager, artifact registry, and automated multi-stage execution.
-8. **Phase 8 — Design Studio Integration:** Interactive model inspector, tree navigator, and parameter visualizer.
+8. **Phase 8 — CAD Studio Integration:** Interactive model inspector, tree navigator, and parameter visualizer.
 9. **Phase 9 — Revision Management:** Requirement diffing, dependency graph tracking, impact analysis, selective invalidation.
 10. **Phase 10 — Engineering Review Engine:** Formal checks for requirement compliance, geometric tolerances, mass limits, and joint interfaces.
 11. **Phase 11 — Prototype Build Package:** Bill of Materials (BOM), material stock schedules, part labels, step-by-step SOP assembly instructions.
@@ -317,7 +317,7 @@ The release gate enforces cross-stage QA before signing off a prototype:
 
 ## 18. Traceability
 
-Every physical prototype part produced by TorqWings Design Studio features unbroken end-to-end provenance:
+Every physical prototype part produced by TorqWings CAD Studio features unbroken end-to-end provenance:
 
 $$\text{Source Spec Requirement} \longrightarrow \text{Normalized Param} \longrightarrow \text{CAD Solid} \longrightarrow \text{Mfg Part ID} \longrightarrow \text{Laser Sheet / STL} \longrightarrow \text{Assembly Step}$$
 
@@ -369,7 +369,7 @@ models/TW-FW-20260921-215327/
 
 ## 20. FW-007 Baseline
 
-**FW-007** is the primary test and verification baseline aircraft for TorqWings Design Studio Part 2. It is a twin-boom / conventional fixed-wing reconnaissance UAV.
+**FW-007** is the primary test and verification baseline aircraft for TorqWings CAD Studio Part 2. It is a twin-boom / conventional fixed-wing reconnaissance UAV.
 
 ### Verified Baseline Engineering Values:
 * **Wingspan:** $2000.0\text{ mm}$ ($2.0\text{ m}$)
@@ -404,7 +404,7 @@ During specification ingestion of the FW-007 engineering datasheet, the system d
 
 > [!CAUTION]
 > **Clear Engineering Boundaries:**
-> TorqWings Design Studio generates **digital prototype CAD, structural geometry, and manufacturing packages**. It explicitly **DOES NOT** provide or claim the following:
+> TorqWings CAD Studio generates **digital prototype CAD, structural geometry, and manufacturing packages**. It explicitly **DOES NOT** provide or claim the following:
 
 1. **No CFD / Aerodynamic Optimization:** The system generates CAD from input specifications; it does not solve Navier-Stokes equations or optimize airfoils.
 2. **No FEA / Structural Safety Certification:** Structural solids and ribs are geometrically synthesized; finite element stress, aeroelastic flutter, or fatigue analysis must be conducted in dedicated FEA solvers.
@@ -435,7 +435,7 @@ All core modules undergo continuous testing via Python unit and integration test
 * `packages/cadpy`: Shared Python CAD and manufacturing runtime package.
 * `packages/cadjs`: Shared JavaScript/TypeScript 3D rendering and viewer kernel.
 * `packages/implicitjs`: WebGL GLSL implicit raymarching engine.
-* `viewer/`: React/Vite-based CAD Viewer and Design Studio workbench frontend.
+* `viewer/`: React/Vite-based CAD Viewer and CAD Studio workbench frontend.
 * `skills/`: Autonomous agent skills for CAD generation, G-code slicing, and fabrication tools.
 * `plugins/cad`: Bundled distribution package of agent skills.
 * `models/`: Catalog of benchmark models, CAD fixtures, and generated prototype packages.

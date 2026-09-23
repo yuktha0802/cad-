@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🦅 TorqWings Design Studio
+# 🦅 TorqWings CAD Studio
 ### Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](pyproject.toml)
-[![STEP](https://img.shields.io/badge/STEP-ISO%2010303-4A5568?style=for-the-badge)](TORQWINGS_DESIGN_STUDIO.md)
-[![Manufacturing](https://img.shields.io/badge/Manufacturing-DXF%20%2F%20SVG%20%2F%20STL-green?style=for-the-badge)](TORQWINGS_DESIGN_STUDIO.md)
+[![STEP](https://img.shields.io/badge/STEP-ISO%2010303-4A5568?style=for-the-badge)](TORQWINGS_CAD_STUDIO.md)
+[![Manufacturing](https://img.shields.io/badge/Manufacturing-DXF%20%2F%20SVG%20%2F%20STL-green?style=for-the-badge)](TORQWINGS_CAD_STUDIO.md)
 [![Release Gate](https://img.shields.io/badge/Release%20Gate-Automated%20QA-orange?style=for-the-badge)](TORQWINGS_STATUS.md)
 
-[Canonical Documentation](TORQWINGS_DESIGN_STUDIO.md) | [Architecture](TORQWINGS_ARCHITECTURE.md) | [Pipeline](TORQWINGS_PIPELINE.md) | [Status](TORQWINGS_STATUS.md)
+[Canonical Documentation](TORQWINGS_CAD_STUDIO.md) | [Architecture](TORQWINGS_ARCHITECTURE.md) | [Pipeline](TORQWINGS_PIPELINE.md) | [Status](TORQWINGS_STATUS.md)
 
 </div>
 
@@ -17,14 +17,14 @@
 
 ## 📌 Executive Summary
 
-**TorqWings Design Studio** is an integrated engineering-driven aircraft CAD, structural synthesis, and prototype manufacturing platform. The platform automates the transition from multi-disciplinary conceptual UAV/aircraft engineering design specifications into complete, verified 3D CAD solid models, synthesized internal airframe structures, classified digital manufacturing packages (laser cutting, 3D printing), deterministic assembly instructions, interactive 3D visualization, and strict final prototype release gates.
+**TorqWings CAD Studio** is an integrated engineering-driven aircraft CAD, structural synthesis, and prototype manufacturing platform. The platform automates the transition from multi-disciplinary conceptual UAV/aircraft engineering design specifications into complete, verified 3D CAD solid models, synthesized internal airframe structures, classified digital manufacturing packages (laser cutting, 3D printing), deterministic assembly instructions, interactive 3D visualization, and strict final prototype release gates.
 
 The system serves as **Part 2** of the end-to-end TorqWings aerospace workflow, ingesting engineering requirements produced by **Part 1** (Engineering Design & Requirement Synthesis) and transforming them into production-ready physical prototype data packages.
 
 ```
 PART 1: Engineering Design & Requirement Synthesis
         ↓ (Engineering Specification / JSON / Markdown)
-PART 2: TorqWings Design Studio
+PART 2: TorqWings CAD Studio
         ↓ Document Ingestion & Parameter Extraction
         ↓ Normalized Engineering Parameter Model (EXPLICIT / DERIVED / CONFLICT)
         ↓ Outer Mold Line (OML) Aircraft CAD Solid Generation
@@ -46,7 +46,7 @@ Physical Prototype Fabrication (Laser Cutting, 3D Printing, Bench Assembly)
 
 | Document | Purpose |
 | :--- | :--- |
-| **[TORQWINGS_DESIGN_STUDIO.md](TORQWINGS_DESIGN_STUDIO.md)** | **Primary Canonical Engineering Document:** Comprehensive 26-section specification covering system overview, identity, workflow, engines, FW-007 baseline, warnings, limitations, and boundaries. |
+| **[TORQWINGS_CAD_STUDIO.md](TORQWINGS_CAD_STUDIO.md)** | **Primary Canonical Engineering Document:** Comprehensive 26-section specification covering system overview, identity, workflow, engines, FW-007 baseline, warnings, limitations, and boundaries. |
 | **[TORQWINGS_ARCHITECTURE.md](TORQWINGS_ARCHITECTURE.md)** | **System Architecture:** Detailed component breakdown of `cadpy` engines, frontend viewer, classes, functions, inputs, outputs, and dependencies. |
 | **[TORQWINGS_PIPELINE.md](TORQWINGS_PIPELINE.md)** | **Pipeline Specification:** Stage-by-stage guide covering INPUT, PROCESS, OUTPUT, VALIDATION, and TRACEABILITY for all 13 pipeline phases. |
 | **[TORQWINGS_STATUS.md](TORQWINGS_STATUS.md)** | **Development & Acceptance Status:** Phase 1–13 completion sign-off and FW-007 acceptance campaign test reports. |
@@ -104,7 +104,7 @@ result = pipeline.run(
 print(f"Release Status: {result.release_manifest.release_status}")
 ```
 
-### 3. Launch Design Studio / CAD Viewer Frontend
+### 3. Launch CAD Studio / CAD Viewer Frontend
 ```bash
 npm --prefix viewer install
 npm --prefix viewer run dev -- --host 127.0.0.1
@@ -115,7 +115,7 @@ Open the browser at `http://127.0.0.1:5173/?dir=models&file=TW-FW-20260921-21532
 
 ## 🧰 Underlying Skills & Agent Capabilities
 
-TorqWings Design Studio is built upon modular CAD, robotics, and manufacturing agent skills located in `skills/`:
+TorqWings CAD Studio is built upon modular CAD, robotics, and manufacturing agent skills located in `skills/`:
 
 | Skill | Description | Location |
 | :--- | :--- | :--- |
@@ -129,7 +129,7 @@ TorqWings Design Studio is built upon modular CAD, robotics, and manufacturing a
 
 ## 👥 Organization
 
-* **Project:** TorqWings Design Studio
+* **Project:** TorqWings CAD Studio
 * **Team:** TorqWings Team
 * **Domain:** `torqwings.com`
 * **License:** MIT License

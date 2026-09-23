@@ -1,12 +1,12 @@
-# TorqWings Design Studio — Development & Validation Status
+# TorqWings CAD Studio — Development & Validation Status
 
-This document records the official development status and acceptance testing results for **TorqWings Design Studio (Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System)**.
+This document records the official development status and acceptance testing results for **TorqWings CAD Studio (Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System)**.
 
 ---
 
 ## 1. Core Implementation Phase Status
 
-All 13 core implementation phases of the TorqWings Design Studio engineering roadmap are **100% COMPLETE, VERIFIED, AND INTEGRATED**.
+All 13 core implementation phases of the TorqWings CAD Studio engineering roadmap are **100% COMPLETE, VERIFIED, AND INTEGRATED**.
 
 | Phase | Phase Name | Status | Summary of Delivered Capability |
 | :--- | :--- | :---: | :--- |
@@ -17,7 +17,7 @@ All 13 core implementation phases of the TorqWings Design Studio engineering roa
 | **Phase 5** | **Structural Airframe Synthesis** | **COMPLETE** | Automated generation of internal airframe skeleton: bulkheads, formers, longerons, wing spars, airfoil ribs, tail ribs, and attachment hardpoints ($48$ solids for FW-007). |
 | **Phase 6** | **Manufacturing Decomposition** | **COMPLETE** | Physical part classification, 2D planar DXF/SVG cut generation with kerf offset, 2D sheet nesting ($3$ sheets), 3D-printable STL brackets, and tab/slot interlocking joint synthesis ($69$ joints). |
 | **Phase 7** | **End-to-End Pipeline Integration** | **COMPLETE** | Unified execution context, artifact registry, automated multi-stage pipeline runner. |
-| **Phase 8** | **Design Studio Workbench Integration** | **COMPLETE** | Web-based CAD Viewer and Design Studio UI integration for model exploration, hierarchy navigation, and inspection. |
+| **Phase 8** | **CAD Studio Workbench Integration** | **COMPLETE** | Web-based CAD Viewer and CAD Studio UI integration for model exploration, hierarchy navigation, and inspection. |
 | **Phase 9** | **Revision Management System** | **COMPLETE** | Differential requirement analysis, dependency graph tracking, downstream artifact invalidation, and immutable revision versioning (`v1`, `v2`). |
 | **Phase 10** | **Engineering Review Engine** | **COMPLETE** | Automated formal evaluation across 8 engineering categories (requirements, geometry, configuration, structure, manufacturing, mass/CG). |
 | **Phase 11** | **Prototype Build Package** | **COMPLETE** | Shop-floor documentation compilation: Bill of Materials (BOM), material stock schedules, and step-by-step Standard Operating Procedures (`build_instructions.md`). |
@@ -75,4 +75,4 @@ All 13 core implementation phases of the TorqWings Design Studio engineering roa
 
 ## 4. Summary
 
-The TorqWings Design Studio codebase is in a stable, verified, and complete state across all 13 core engineering phases. The platform reliably generates physical digital prototype fabrication packages from input engineering specifications with unbroken end-to-end traceability.
+The TorqWings CAD Studio codebase is in a stable, verified, and complete state across all 13 core engineering phases. The platform reliably generates physical digital prototype fabrication packages from input engineering specifications with unbroken end-to-end traceability.
