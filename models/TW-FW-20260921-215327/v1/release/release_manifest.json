@@ -1,0 +1,166 @@
+{
+  "aircraft_id": "TW-FW-20260921-215327",
+  "release_id": "TW-FW-20260921-215327-v1-RELEASE-20260923085705",
+  "version": "v1",
+  "specification_version": "TW-FW-20260921-215327",
+  "created_at": "2026-09-23T08:57:06.494979+00:00",
+  "release_status": "RELEASE_READY",
+  "prototype_status": "READY",
+  "checks": [
+    {
+      "check_id": "REL-STAGE-001",
+      "category": "CROSS_STAGE_QA",
+      "name": "Pipeline Stages Completeness",
+      "status": "PASS",
+      "is_blocking": true,
+      "message": "All prerequisite phases (Phases 3\u201312) generated and validated",
+      "expected": "All 7 core models present",
+      "actual": "Present: spec=True, cad=True, struct=True, mfg=True, val=True, rev=True, bpkg=True",
+      "source_stage": "Phase 7 Pipeline",
+      "traceable_component": null,
+      "traceable_artifact": null
+    },
+    {
+      "check_id": "REL-CAD-001",
+      "category": "CAD_CONSISTENCY",
+      "name": "CAD Wingspan Consistency",
+      "status": "PASS",
+      "is_blocking": true,
+      "message": "CAD wingspan 2000.0 mm matches spec 2000.0 mm (dev=0.00 mm)",
+      "expected": 2000.0,
+      "actual": 2000.0000002000006,
+      "source_stage": "Phase 4 CAD",
+      "traceable_component": "MainWing",
+      "traceable_artifact": null
+    },
+    {
+      "check_id": "REL-STR-001",
+      "category": "STRUCTURAL_CONSISTENCY",
+      "name": "Structural Solid Completeness",
+      "status": "PASS",
+      "is_blocking": true,
+      "message": "Airframe contains 48 structural solids",
+      "expected": "\u2265 40 structural solids",
+      "actual": "48 solids",
+      "source_stage": "Phase 5 Structure",
+      "traceable_component": null,
+      "traceable_artifact": null
+    },
+    {
+      "check_id": "REL-STR-002",
+      "category": "STRUCTURAL_CONSISTENCY",
+      "name": "Structural Solid Non-Degeneracy",
+      "status": "PASS",
+      "is_blocking": true,
+      "message": "All structural components have positive 3D volumes",
+      "expected": "0 degenerate solids",
+      "actual": "0 degenerate solids",
+      "source_stage": "Phase 5 Structure",
+      "traceable_component": null,
+      "traceable_artifact": null
+    },
+    {
+      "check_id": "REL-MFG-001",
+      "category": "MANUFACTURING_CONSISTENCY",
+      "name": "Manufacturing Decomposition Completeness",
+      "status": "PASS",
+      "is_blocking": true,
+      "message": "Structural components mapped 1:1 to 48 manufacturing parts",
+      "expected": "48 manufacturing parts",
+      "actual": "48 manufacturing parts",
+      "source_stage": "Phase 6B Classification",
+      "traceable_component": null,
+      "traceable_artifact": null
+    },
+    {
+      "check_id": "REL-BPKG-001",
+      "category": "BUILD_PACKAGE_CONSISTENCY",
+      "name": "Build Package Integrity & BOM Consistency",
+      "status": "PASS",
+      "is_blocking": true,
+      "message": "Prototype Build Package validated without orphan or duplicate parts",
+      "expected": "Valid build package",
+      "actual": "VALID",
+      "source_stage": "Phase 11 Build Package",
+      "traceable_component": null,
+      "traceable_artifact": null
+    },
+    {
+      "check_id": "REL-BPKG-002",
+      "category": "BUILD_PACKAGE_CONSISTENCY",
+      "name": "Part ID Uniqueness",
+      "status": "PASS",
+      "is_blocking": true,
+      "message": "All physical parts have unique, deterministic IDs",
+      "expected": "0 duplicate IDs",
+      "actual": "0 duplicates",
+      "source_stage": "Phase 11 Build Package",
+      "traceable_component": null,
+      "traceable_artifact": null
+    },
+    {
+      "check_id": "REL-ART-001",
+      "category": "ARTIFACT_INTEGRITY",
+      "name": "Physical Artifact Existence & Non-Emptiness",
+      "status": "PASS",
+      "is_blocking": true,
+      "message": "All required release artifacts exist with non-zero file sizes",
+      "expected": "0 missing required artifacts",
+      "actual": "0 missing: []",
+      "source_stage": "Phase 7 Artifact Registry",
+      "traceable_component": null,
+      "traceable_artifact": null
+    }
+  ],
+  "warnings": [],
+  "failures": [],
+  "blocking_issues": [],
+  "artifacts": [
+    {
+      "name": "BOM Report",
+      "path": "models\\TW-FW-20260921-215327\\v1\\bom.json",
+      "exists": false,
+      "size_bytes": 0,
+      "is_required": false
+    },
+    {
+      "name": "STEP Assembly",
+      "path": "models\\TW-FW-20260921-215327\\v1\\step\\TW-FW-20260921-215327.step",
+      "exists": false,
+      "size_bytes": 0,
+      "is_required": false
+    },
+    {
+      "name": "Laser Sheet 1 DXF",
+      "path": "models\\TW-FW-20260921-215327\\v1\\TW-FW-20260921-215327_manufacturing\\laser\\sheets\\Sheet_01.dxf",
+      "exists": false,
+      "size_bytes": 0,
+      "is_required": false
+    }
+  ],
+  "traceability_summary": {
+    "total_requirements_tracked": 6,
+    "cad_traceable_count": 5,
+    "manufacturing_traceable_count": 48,
+    "status": "VERIFIED"
+  },
+  "cross_stage_summary": {
+    "cad_consistency": "PASS",
+    "structural_consistency": "PASS",
+    "manufacturing_consistency": "PASS",
+    "build_package_consistency": "PASS",
+    "artifact_integrity": "PASS"
+  },
+  "summary": {
+    "release_id": "TW-FW-20260921-215327-v1-RELEASE-20260923085705",
+    "aircraft_id": "TW-FW-20260921-215327",
+    "version": "v1",
+    "release_status": "RELEASE_READY",
+    "prototype_status": "READY",
+    "total_checks": 8,
+    "passed_checks": 8,
+    "warnings_count": 0,
+    "blocking_issues_count": 0,
+    "artifacts_count": 3
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "aircraft_id": "TW-FW-20260921-215327",
+  "manufacturing_profile": "TW-FW-20260921-215327_Production_Profile",
+  "overall_status": "PASS",
+  "prototype_readiness": "READY",
+  "inventory": {
+    "structural_components": 48,
+    "manufacturing_parts": 48,
+    "fabrication_geometries": 48,
+    "laser_parts": 47,
+    "three_d_print_parts": 1,
+    "joints": 69,
+    "sheets": 2
+  },
+  "validation_gates": {
+    "completeness": "PASS",
+    "traceability": "PASS",
+    "laser_output": "PASS",
+    "three_d_print": "PASS",
+    "joints": "PASS",
+    "dimensions": "PASS",
+    "symmetry": "PASS",
+    "bays": "PASS",
+    "propulsion": "PASS",
+    "virtual_reassembly": "PASS"
+  },
+  "dimensional_comparison": [
+    {
+      "parameter": "Wingspan",
+      "phase_5_nominal": "2000.0 mm",
+      "virtual_manufacturing": "2000.0 mm",
+      "deviation": "0.00 mm",
+      "tolerance": "\u00b11.0 mm",
+      "result": "PASS"
+    },
+    {
+      "parameter": "Fuselage Length",
+      "phase_5_nominal": "1200.0 mm",
+      "virtual_manufacturing": "1200.0 mm",
+      "deviation": "0.00 mm",
+      "tolerance": "\u00b11.0 mm",
+      "result": "PASS"
+    },
+    {
+      "parameter": "Horizontal Tail Span",
+      "phase_5_nominal": "500.0 mm",
+      "virtual_manufacturing": "500.0 mm",
+      "deviation": "0.00 mm",
+      "tolerance": "\u00b11.0 mm",
+      "result": "PASS"
+    },
+    {
+      "parameter": "Vertical Tail Height",
+      "phase_5_nominal": "400.0 mm",
+      "virtual_manufacturing": "400.0 mm",
+      "deviation": "0.00 mm",
+      "tolerance": "\u00b11.0 mm",
+      "result": "PASS"
+    },
+    {
+      "parameter": "Propeller Diameter",
+      "phase_5_nominal": "304.8 mm",
+      "virtual_manufacturing": "304.8 mm",
+      "deviation": "0.00 mm",
+      "tolerance": "\u00b11.0 mm",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "bom_summary": {
+    "total_parts": 48,
+    "laser_cut_count": 47,
+    "three_d_print_count": 1,
+    "total_joints": 69,
+    "total_sheets": 2,
+    "materials": {
+      "Aeroply_3mm": 14,
+      "Balsa_3mm": 33,
+      "PLA_Standard": 1
+    },
+    "estimated_total_mass_g": 7882.5
+  }
+}

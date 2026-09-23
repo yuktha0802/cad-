@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900.0mm" height="600.0mm" viewBox="0 0 900.0 600.0">
+  <rect x="0" y="0" width="900.0" height="600.0" fill="#f8f8f8" stroke="#333" stroke-width="1"/>
+  <rect x="10.0" y="10.0" width="880.0" height="580.0" fill="none" stroke="#999" stroke-dasharray="4,4" stroke-width="0.5"/>
+  <rect x="10.0" y="10.0" width="249.69" height="30.04" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="16.0" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-000</text>
+  <rect x="261.69" y="10.0" width="249.69" height="30.04" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="263.69" y="16.0" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-000</text>
+  <rect x="513.39" y="10.0" width="238.21" height="28.66" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="515.39" y="16.0" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-001</text>
+  <rect x="10.0" y="42.04" width="238.21" height="28.66" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="48.04" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-001</text>
+  <rect x="250.21" y="42.04" width="226.22" height="27.23" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="252.21" y="48.04" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-002</text>
+  <rect x="478.42" y="42.04" width="226.22" height="27.23" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="480.42" y="48.04" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-002</text>
+  <rect x="10.0" y="72.7" width="214.23" height="25.82" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="78.7" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-003</text>
+  <rect x="226.23" y="72.7" width="214.23" height="25.82" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="228.23" y="78.7" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-003</text>
+  <rect x="442.45" y="72.7" width="202.23" height="24.41" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="444.45" y="78.7" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-004</text>
+  <rect x="646.69" y="72.7" width="202.23" height="24.41" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="648.69" y="78.7" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-004</text>
+  <rect x="10.0" y="100.52" width="190.24" height="23.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="106.52" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-005</text>
+  <rect x="202.24" y="100.52" width="190.24" height="23.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="204.24" y="106.52" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-005</text>
+  <rect x="10.0" y="125.52" width="724.73" height="10.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="131.51999999999998" font-family="sans-serif" font-size="3.5" fill="#1976d2">LONG-LOWER-L</text>
+  <rect x="10.0" y="137.52" width="724.73" height="10.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="143.52" font-family="sans-serif" font-size="3.5" fill="#1976d2">LONG-LOWER-R</text>
+  <rect x="10.0" y="149.52" width="668.3" height="10.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="155.52" font-family="sans-serif" font-size="3.5" fill="#1976d2">LONG-UPPER-L</text>
+  <rect x="10.0" y="161.52" width="668.3" height="10.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="167.52" font-family="sans-serif" font-size="3.5" fill="#1976d2">LONG-UPPER-R</text>
+  <rect x="680.3" y="161.52" width="178.24" height="21.6" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="682.3" y="167.52" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-006</text>
+  <rect x="10.0" y="185.12" width="178.24" height="21.6" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="191.12" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-006</text>
+  <rect x="190.24" y="185.12" width="166.23" height="20.2" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="192.24" y="191.12" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-007</text>
+  <rect x="358.47" y="185.12" width="166.23" height="20.2" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="360.47" y="191.12" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-007</text>
+  <rect x="526.7" y="185.12" width="154.22" height="18.79" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="528.7" y="191.12" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-008</text>
+  <rect x="682.92" y="185.12" width="154.22" height="18.79" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="684.92" y="191.12" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-008</text>
+  <rect x="10.0" y="208.71" width="150.42" height="18.35" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="214.71" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-L-009</text>
+  <rect x="162.42" y="208.71" width="150.42" height="18.35" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="164.42" y="214.71" font-family="sans-serif" font-size="3.5" fill="#1976d2">RIB-R-009</text>
+  <rect x="314.84" y="208.71" width="149.42" height="17.93" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="316.84" y="214.71" font-family="sans-serif" font-size="3.5" fill="#1976d2">HT-RIB-L-000</text>
+  <rect x="466.26" y="208.71" width="149.42" height="17.93" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="468.26" y="214.71" font-family="sans-serif" font-size="3.5" fill="#1976d2">HT-RIB-R-000</text>
+  <rect x="617.69" y="208.71" width="125.24" height="15.02" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="619.69" y="214.71" font-family="sans-serif" font-size="3.5" fill="#1976d2">HT-RIB-L-001</text>
+  <rect x="744.93" y="208.71" width="125.24" height="15.02" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="746.93" y="214.71" font-family="sans-serif" font-size="3.5" fill="#1976d2">HT-RIB-R-001</text>
+  <rect x="10.0" y="229.06" width="100.56" height="12.06" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="12.0" y="235.06" font-family="sans-serif" font-size="3.5" fill="#1976d2">HT-RIB-L-002</text>
+  <rect x="112.56" y="229.06" width="100.56" height="12.06" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="114.56" y="235.06" font-family="sans-serif" font-size="3.5" fill="#1976d2">HT-RIB-R-002</text>
+  <rect x="215.12" y="229.06" width="149.46" height="10.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="217.12" y="235.06" font-family="sans-serif" font-size="3.5" fill="#1976d2">VT-RIB-000</text>
+  <rect x="366.58" y="229.06" width="125.23" height="10.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="368.58" y="235.06" font-family="sans-serif" font-size="3.5" fill="#1976d2">VT-RIB-001</text>
+  <rect x="493.81" y="229.06" width="100.53" height="10.0" fill="#e3f2fd" stroke="#d32f2f" stroke-width="0.5"/>
+  <text x="495.81" y="235.06" font-family="sans-serif" font-size="3.5" fill="#1976d2">VT-RIB-002</text>
+</svg>

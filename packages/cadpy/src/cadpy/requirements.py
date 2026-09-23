@@ -375,11 +375,240 @@ def parse_value_and_unit(text: str) -> Tuple[Union[float, str], str]:
     return text_clean, ""
 
 
+def _parse_design_schema_dict(
+    data: Dict[str, Any], spec: AircraftSpecification, source_name: str
+) -> AircraftSpecification:
+    """Parse a structured engineering design JSON dictionary directly into AircraftSpecification."""
+    # 1. Identity
+    design_id = data.get("design_id", source_name)
+    spec.identity.title = Requirement(
+        design_id, "", source_name, "Identity", "EXPLICIT"
+    )
+
+    # 2. Configuration
+    config_str = str(data.get("configuration", ""))
+    cfg_lower = config_str.lower()
+    wing_pos = "high" if "high" in cfg_lower else ("low" if "low" in cfg_lower else "mid")
+    prop_layout = "pusher" if "pusher" in cfg_lower else "tractor"
+    tail_cfg = "conventional" if "conventional" in cfg_lower else ("v-tail" if "v-tail" in cfg_lower else "conventional")
+
+    spec.configuration.wing_position = Requirement(
+        wing_pos, "", source_name, "Configuration", "EXPLICIT"
+    )
+    spec.configuration.propulsion_layout = Requirement(
+        prop_layout, "", source_name, "Configuration", "EXPLICIT"
+    )
+    spec.configuration.tail_configuration = Requirement(
+        tail_cfg, "", source_name, "Configuration", "EXPLICIT"
+    )
+
+    # 3. Geometry - Wing
+    geom = data.get("geometry", {})
+    wing_geom = geom.get("wing", {})
+    cad_handover = data.get("cad_handover", {})
+    major_geom = cad_handover.get("major_geometry", {})
+
+    span_m = wing_geom.get("span_m") or major_geom.get("wingspan_m") or 2.0
+    root_c_m = wing_geom.get("root_chord_m") or major_geom.get("root_chord_m") or 0.25
+    tip_c_m = wing_geom.get("tip_chord_m") or major_geom.get("tip_chord_m") or 0.15
+    sweep_deg = float(wing_geom.get("sweep_deg", 0.0))
+    dihedral_deg = float(wing_geom.get("dihedral_deg", 2.0))
+    incidence_deg = float(wing_geom.get("incidence_deg", 1.5))
+    root_airfoil = wing_geom.get("airfoil_root") or (
+        cad_handover.get("wing_airfoils", ["NACA 2412"])[0]
+        if cad_handover.get("wing_airfoils")
+        else "NACA 2412"
+    )
+    tip_airfoil = wing_geom.get("airfoil_tip") or (
+        cad_handover.get("wing_airfoils", ["NACA 2412"])[-1]
+        if cad_handover.get("wing_airfoils")
+        else "NACA 2412"
+    )
+
+    spec.wing.span = Requirement(
+        span_m * 1000.0, "mm", source_name, "Wing", "EXPLICIT", original_value=span_m, original_unit="m"
+    )
+    spec.wing.root_chord = Requirement(
+        root_c_m * 1000.0, "mm", source_name, "Wing", "EXPLICIT", original_value=root_c_m, original_unit="m"
+    )
+    spec.wing.tip_chord = Requirement(
+        tip_c_m * 1000.0, "mm", source_name, "Wing", "EXPLICIT", original_value=tip_c_m, original_unit="m"
+    )
+    spec.wing.sweep = Requirement(
+        sweep_deg, "degrees", source_name, "Wing", "EXPLICIT"
+    )
+    spec.wing.dihedral = Requirement(
+        dihedral_deg, "degrees", source_name, "Wing", "EXPLICIT"
+    )
+    spec.wing.incidence = Requirement(
+        incidence_deg, "degrees", source_name, "Wing", "EXPLICIT"
+    )
+    spec.wing.root_airfoil = Requirement(
+        root_airfoil, "", source_name, "Wing", "EXPLICIT"
+    )
+    spec.wing.tip_airfoil = Requirement(
+        tip_airfoil, "", source_name, "Wing", "EXPLICIT"
+    )
+    if wing_geom.get("area_m2") or major_geom.get("wing_area_m2"):
+        spec.wing.area = Requirement(
+            wing_geom.get("area_m2") or major_geom.get("wing_area_m2"),
+            "m^2", source_name, "Wing", "EXPLICIT"
+        )
+
+    # 4. Geometry - Fuselage
+    fuse_geom = geom.get("fuselage", {})
+    fuse_len_m = fuse_geom.get("length_m") or major_geom.get("fuselage_length_m") or 1.2
+    fuse_w_m = fuse_geom.get("max_width_m") or major_geom.get("fuselage_width_m") or 0.16
+    fuse_h_m = fuse_geom.get("max_height_m", 0.18)
+
+    spec.fuselage.length = Requirement(
+        fuse_len_m * 1000.0, "mm", source_name, "Fuselage", "EXPLICIT", original_value=fuse_len_m, original_unit="m"
+    )
+    spec.fuselage.width = Requirement(
+        fuse_w_m * 1000.0, "mm", source_name, "Fuselage", "EXPLICIT", original_value=fuse_w_m, original_unit="m"
+    )
+    spec.fuselage.height = Requirement(
+        fuse_h_m * 1000.0, "mm", source_name, "Fuselage", "EXPLICIT", original_value=fuse_h_m, original_unit="m"
+    )
+
+    # Internal bays
+    p_dims = fuse_geom.get("payload_bay_dimensions_m")
+    if p_dims and len(p_dims) == 3:
+        spec.internal_bays.payload_bay.length = Requirement(
+            p_dims[0] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+        spec.internal_bays.payload_bay.width = Requirement(
+            p_dims[1] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+        spec.internal_bays.payload_bay.height = Requirement(
+            p_dims[2] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+
+    b_dims = fuse_geom.get("battery_bay_dimensions_m")
+    if b_dims and len(b_dims) == 3:
+        spec.internal_bays.battery_bay.length = Requirement(
+            b_dims[0] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+        spec.internal_bays.battery_bay.width = Requirement(
+            b_dims[1] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+        spec.internal_bays.battery_bay.height = Requirement(
+            b_dims[2] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+
+    a_dims = fuse_geom.get("avionics_bay_dimensions_m")
+    if a_dims and len(a_dims) == 3:
+        spec.internal_bays.avionics_bay.length = Requirement(
+            a_dims[0] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+        spec.internal_bays.avionics_bay.width = Requirement(
+            a_dims[1] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+        spec.internal_bays.avionics_bay.height = Requirement(
+            a_dims[2] * 1000.0, "mm", source_name, "Internal Bays", "EXPLICIT"
+        )
+
+    # 5. Tail
+    tail_geom = geom.get("tail", {})
+    t_span_m = tail_geom.get("span_m") or major_geom.get("tail_span_m") or 0.6
+    t_root_c_m = tail_geom.get("root_chord_m", 0.15)
+    t_tip_c_m = tail_geom.get("tip_chord_m", 0.1)
+    t_airfoil = tail_geom.get("airfoil") or cad_handover.get("tail_airfoil", "NACA 0012")
+
+    spec.horizontal_tail.span = Requirement(
+        t_span_m * 1000.0, "mm", source_name, "Tail", "EXPLICIT", original_value=t_span_m, original_unit="m"
+    )
+    spec.horizontal_tail.root_chord = Requirement(
+        t_root_c_m * 1000.0, "mm", source_name, "Tail", "EXPLICIT", original_value=t_root_c_m, original_unit="m"
+    )
+    spec.horizontal_tail.tip_chord = Requirement(
+        t_tip_c_m * 1000.0, "mm", source_name, "Tail", "EXPLICIT", original_value=t_tip_c_m, original_unit="m"
+    )
+    spec.horizontal_tail.airfoil = Requirement(
+        t_airfoil, "", source_name, "Tail", "EXPLICIT"
+    )
+
+    # Vertical Fin
+    spec.vertical_tail.root_chord = Requirement(
+        t_root_c_m * 1000.0, "mm", source_name, "Tail", "EXPLICIT"
+    )
+    spec.vertical_tail.tip_chord = Requirement(
+        t_tip_c_m * 1000.0, "mm", source_name, "Tail", "EXPLICIT"
+    )
+    v_area = tail_geom.get("projected_vertical_area_m2", 0.04)
+    avg_c = (t_root_c_m + t_tip_c_m) / 2.0
+    v_h_m = (v_area / avg_c) if avg_c > 0 else 0.25
+    spec.vertical_tail.height = Requirement(
+        v_h_m * 1000.0, "mm", source_name, "Tail", "EXPLICIT", original_value=v_h_m, original_unit="m"
+    )
+    spec.vertical_tail.airfoil = Requirement(
+        t_airfoil, "", source_name, "Tail", "EXPLICIT"
+    )
+
+    # 6. Propulsion
+    prop_dict = data.get("propulsion", {})
+    cruise_prop = prop_dict.get("cruise_propulsion", {})
+    motor_name = cruise_prop.get("motor_model", "")
+    prop_model = cruise_prop.get("propeller_model", "APC 12x6E")
+    prop_diam_in = float(cruise_prop.get("propeller_diameter_in", 12.0))
+    prop_pitch_in = float(cruise_prop.get("propeller_pitch_in", 6.0))
+
+    spec.propulsion.motor = Requirement(
+        motor_name, "", source_name, "Propulsion", "EXPLICIT"
+    )
+    spec.propulsion.propeller = Requirement(
+        prop_model, "", source_name, "Propulsion", "EXPLICIT"
+    )
+    spec.propulsion.propeller_diameter = Requirement(
+        prop_diam_in * 25.4, "mm", source_name, "Propulsion", "EXPLICIT", original_value=prop_diam_in, original_unit="in"
+    )
+    spec.propulsion.propeller_pitch = Requirement(
+        prop_pitch_in * 25.4, "mm", source_name, "Propulsion", "EXPLICIT", original_value=prop_pitch_in, original_unit="in"
+    )
+
+    # 7. Mass & CG
+    mass_dict = data.get("mass_properties", {})
+    spec.mass.MTOW = Requirement(
+        float(mass_dict.get("mtow_kg", 3.2)), "kg", source_name, "Mass", "EXPLICIT"
+    )
+    spec.mass.empty_weight = Requirement(
+        float(mass_dict.get("empty_mass_kg", 1.8)), "kg", source_name, "Mass", "EXPLICIT"
+    )
+    spec.mass.payload_weight = Requirement(
+        float(mass_dict.get("payload_mass_kg", 0.8)), "kg", source_name, "Mass", "EXPLICIT"
+    )
+    spec.mass.battery_weight = Requirement(
+        float(mass_dict.get("battery_mass_kg", 0.65)), "kg", source_name, "Mass", "EXPLICIT"
+    )
+
+    cg_x_m = mass_dict.get("cg_x_m") or (
+        cad_handover.get("cg_location_m", [0.44])[0] if cad_handover.get("cg_location_m") else 0.44
+    )
+    spec.cg.cg_x = Requirement(
+        float(cg_x_m) * 1000.0, "mm", source_name, "CG", "EXPLICIT"
+    )
+
+    derive_values(spec, source_name)
+    return spec
+
+
 def parse_aircraft_specification(
     document: Union[str, Dict[str, Any]], source_name: str = "FW-007"
 ) -> AircraftSpecification:
     """Parse the engineering specification from a report JSON or raw text."""
     spec = AircraftSpecification()
+
+    # Check for direct design schema JSON / dictionary
+    if isinstance(document, dict):
+        if "geometry" in document or "cad_handover" in document or "aircraft_class" in document:
+            return _parse_design_schema_dict(document, spec, source_name)
+    elif isinstance(document, str):
+        try:
+            parsed_json = json.loads(document)
+            if isinstance(parsed_json, dict) and ("geometry" in parsed_json or "cad_handover" in parsed_json or "aircraft_class" in parsed_json):
+                return _parse_design_schema_dict(parsed_json, spec, source_name)
+        except Exception:
+            pass
 
     # Load dict from JSON if applicable
     raw_sections = {}

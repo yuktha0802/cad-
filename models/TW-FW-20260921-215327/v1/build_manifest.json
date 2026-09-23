@@ -1,0 +1,2250 @@
+{
+  "aircraft_id": "TW-FW-20260921-215327",
+  "version": "v1",
+  "specification_version": "TW-FW-20260921-215327",
+  "package_version": "1.0.0",
+  "created_at": "2026-09-23T08:57:05.769601+00:00",
+  "prototype_readiness": "READY",
+  "engineering_review_status": "PASS",
+  "manufacturing_validation_status": "PASS",
+  "summary": {
+    "total_parts": 48,
+    "laser_parts": 47,
+    "printable_parts": 1,
+    "total_joints": 69,
+    "total_sheets": 2,
+    "total_assembly_steps": 5,
+    "build_validation_status": "READY",
+    "prototype_readiness": "READY"
+  },
+  "parts_count": 48,
+  "parts": [
+    {
+      "part_id": "SPAR-L-MAIN",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_MainSpar",
+      "source_structural_component": "MainWing_Left_MainSpar",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "SPAR-L-REAR",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_RearSpar",
+      "source_structural_component": "MainWing_Left_RearSpar",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-000",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_000",
+      "source_structural_component": "MainWing_Left_Rib_000",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-001",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_001",
+      "source_structural_component": "MainWing_Left_Rib_001",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-002",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_002",
+      "source_structural_component": "MainWing_Left_Rib_002",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-003",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_003",
+      "source_structural_component": "MainWing_Left_Rib_003",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-004",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_004",
+      "source_structural_component": "MainWing_Left_Rib_004",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-005",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_005",
+      "source_structural_component": "MainWing_Left_Rib_005",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-006",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_006",
+      "source_structural_component": "MainWing_Left_Rib_006",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-007",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_007",
+      "source_structural_component": "MainWing_Left_Rib_007",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-008",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_008",
+      "source_structural_component": "MainWing_Left_Rib_008",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-L-009",
+      "name": "MainWing Left",
+      "category": "MainWing_Left",
+      "source_component": "MainWing_Left_Rib_009",
+      "source_structural_component": "MainWing_Left_Rib_009",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "SPAR-R-MAIN",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_MainSpar",
+      "source_structural_component": "MainWing_Right_MainSpar",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "SPAR-R-REAR",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_RearSpar",
+      "source_structural_component": "MainWing_Right_RearSpar",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-000",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_000",
+      "source_structural_component": "MainWing_Right_Rib_000",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-001",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_001",
+      "source_structural_component": "MainWing_Right_Rib_001",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-002",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_002",
+      "source_structural_component": "MainWing_Right_Rib_002",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-003",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_003",
+      "source_structural_component": "MainWing_Right_Rib_003",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-004",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_004",
+      "source_structural_component": "MainWing_Right_Rib_004",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-005",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_005",
+      "source_structural_component": "MainWing_Right_Rib_005",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-006",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_006",
+      "source_structural_component": "MainWing_Right_Rib_006",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-007",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_007",
+      "source_structural_component": "MainWing_Right_Rib_007",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-008",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_008",
+      "source_structural_component": "MainWing_Right_Rib_008",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "RIB-R-009",
+      "name": "MainWing Right",
+      "category": "MainWing_Right",
+      "source_component": "MainWing_Right_Rib_009",
+      "source_structural_component": "MainWing_Right_Rib_009",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "FMR-000",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Former_000",
+      "source_structural_component": "Fuselage_Former_000",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "FMR-001",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Former_001",
+      "source_structural_component": "Fuselage_Former_001",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "FMR-002",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Former_002",
+      "source_structural_component": "Fuselage_Former_002",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "FMR-003",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Former_003",
+      "source_structural_component": "Fuselage_Former_003",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "FMR-004",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Former_004",
+      "source_structural_component": "Fuselage_Former_004",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "FMR-005",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Former_005",
+      "source_structural_component": "Fuselage_Former_005",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "LONG-UPPER-L",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Longeron_UpperLeft",
+      "source_structural_component": "Fuselage_Longeron_UpperLeft",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "LONG-UPPER-R",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Longeron_UpperRight",
+      "source_structural_component": "Fuselage_Longeron_UpperRight",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "LONG-LOWER-L",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Longeron_LowerLeft",
+      "source_structural_component": "Fuselage_Longeron_LowerLeft",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "LONG-LOWER-R",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Fuselage_Longeron_LowerRight",
+      "source_structural_component": "Fuselage_Longeron_LowerRight",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "FIREWALL-001",
+      "name": "Fuselage",
+      "category": "Fuselage",
+      "source_component": "Motor_Firewall",
+      "source_structural_component": "Motor_Firewall",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "HT-SPAR-L-001",
+      "name": "HorizontalTail Left",
+      "category": "MainWing_Left",
+      "source_component": "HorizontalTail_Left_Spar",
+      "source_structural_component": "HorizontalTail_Left_Spar",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "HT-RIB-L-000",
+      "name": "HorizontalTail Left",
+      "category": "MainWing_Left",
+      "source_component": "HorizontalTail_Left_Rib_000",
+      "source_structural_component": "HorizontalTail_Left_Rib_000",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "HT-RIB-L-001",
+      "name": "HorizontalTail Left",
+      "category": "MainWing_Left",
+      "source_component": "HorizontalTail_Left_Rib_001",
+      "source_structural_component": "HorizontalTail_Left_Rib_001",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "HT-RIB-L-002",
+      "name": "HorizontalTail Left",
+      "category": "MainWing_Left",
+      "source_component": "HorizontalTail_Left_Rib_002",
+      "source_structural_component": "HorizontalTail_Left_Rib_002",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Left",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "HT-SPAR-R-001",
+      "name": "HorizontalTail Right",
+      "category": "MainWing_Right",
+      "source_component": "HorizontalTail_Right_Spar",
+      "source_structural_component": "HorizontalTail_Right_Spar",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "HT-RIB-R-000",
+      "name": "HorizontalTail Right",
+      "category": "MainWing_Right",
+      "source_component": "HorizontalTail_Right_Rib_000",
+      "source_structural_component": "HorizontalTail_Right_Rib_000",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "HT-RIB-R-001",
+      "name": "HorizontalTail Right",
+      "category": "MainWing_Right",
+      "source_component": "HorizontalTail_Right_Rib_001",
+      "source_structural_component": "HorizontalTail_Right_Rib_001",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "HT-RIB-R-002",
+      "name": "HorizontalTail Right",
+      "category": "MainWing_Right",
+      "source_component": "HorizontalTail_Right_Rib_002",
+      "source_structural_component": "HorizontalTail_Right_Rib_002",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "MainWing_Right",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "VT-SPAR-001",
+      "name": "VerticalTail",
+      "category": "VerticalTail",
+      "source_component": "VerticalTail_MainSpar",
+      "source_structural_component": "VerticalTail_MainSpar",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_01",
+      "subassembly": "VerticalTail",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "VT-RIB-000",
+      "name": "VerticalTail",
+      "category": "VerticalTail",
+      "source_component": "VerticalTail_Rib_000",
+      "source_structural_component": "VerticalTail_Rib_000",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "VerticalTail",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "VT-RIB-001",
+      "name": "VerticalTail",
+      "category": "VerticalTail",
+      "source_component": "VerticalTail_Rib_001",
+      "source_structural_component": "VerticalTail_Rib_001",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "VerticalTail",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "VT-RIB-002",
+      "name": "VerticalTail",
+      "category": "VerticalTail",
+      "source_component": "VerticalTail_Rib_002",
+      "source_structural_component": "VerticalTail_Rib_002",
+      "manufacturing_process": "LASER_CUT",
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "Sheet_02",
+      "subassembly": "VerticalTail",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    },
+    {
+      "part_id": "WING-ATTACH-001",
+      "name": "Wing Fuselage Junction",
+      "category": "Fuselage",
+      "source_component": "Wing_Fuselage_Attachment",
+      "source_structural_component": "Wing_Fuselage_Attachment",
+      "manufacturing_process": "THREE_D_PRINT",
+      "material": "PLA_Standard",
+      "thickness": 3.0,
+      "quantity": 1,
+      "dimensions": {},
+      "artifact_reference": "models\\TW-FW-20260921-215327\\v1\\print\\PRINT-WING-ATTACH-001.stl",
+      "subassembly": "Fuselage",
+      "orientation": "NORMAL",
+      "grain_direction": "NOT SPECIFIED",
+      "status": "VALIDATED"
+    }
+  ],
+  "materials": [
+    {
+      "material": "Aeroply_3mm",
+      "thickness": 3.0,
+      "process": "LASER_CUT",
+      "part_count": 14,
+      "sheet_count": 1,
+      "stock_dimensions": "900 \u00d7 600 mm",
+      "parts": [
+        "VT-SPAR-001",
+        "SPAR-L-REAR",
+        "SPAR-R-REAR",
+        "SPAR-L-MAIN",
+        "SPAR-R-MAIN",
+        "FMR-002",
+        "FMR-003",
+        "FMR-004",
+        "FMR-001",
+        "FMR-000",
+        "HT-SPAR-L-001",
+        "HT-SPAR-R-001",
+        "FMR-005",
+        "FIREWALL-001"
+      ]
+    },
+    {
+      "material": "Balsa_3mm",
+      "thickness": 3.0,
+      "process": "LASER_CUT",
+      "part_count": 33,
+      "sheet_count": 1,
+      "stock_dimensions": "900 \u00d7 600 mm",
+      "parts": [
+        "RIB-L-000",
+        "RIB-R-000",
+        "RIB-L-001",
+        "RIB-R-001",
+        "RIB-L-002",
+        "RIB-R-002",
+        "RIB-L-003",
+        "RIB-R-003",
+        "RIB-L-004",
+        "RIB-R-004",
+        "RIB-L-005",
+        "RIB-R-005",
+        "LONG-LOWER-L",
+        "LONG-LOWER-R",
+        "LONG-UPPER-L",
+        "LONG-UPPER-R",
+        "RIB-L-006",
+        "RIB-R-006",
+        "RIB-L-007",
+        "RIB-R-007",
+        "RIB-L-008",
+        "RIB-R-008",
+        "RIB-L-009",
+        "RIB-R-009",
+        "HT-RIB-L-000",
+        "HT-RIB-R-000",
+        "HT-RIB-L-001",
+        "HT-RIB-R-001",
+        "HT-RIB-L-002",
+        "HT-RIB-R-002",
+        "VT-RIB-000",
+        "VT-RIB-001",
+        "VT-RIB-002"
+      ]
+    },
+    {
+      "material": "PETG_OR_PLA",
+      "thickness": 0.0,
+      "process": "THREE_D_PRINT",
+      "part_count": 1,
+      "sheet_count": 0,
+      "stock_dimensions": "220 \u00d7 220 \u00d7 250 mm build volume",
+      "parts": [
+        "WING-ATTACH-001"
+      ]
+    }
+  ],
+  "joints_count": 69,
+  "joints": [
+    {
+      "joint_id": "JNT_RIB_L_000_SPAR_MAIN",
+      "part_a": "RIB-L-000",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -5.0,
+        "z": 172.89
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_000_SPAR_REAR",
+      "part_a": "RIB-L-000",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": -5.0,
+        "z": 173.72
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_001_SPAR_MAIN",
+      "part_a": "RIB-L-001",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -120.0,
+        "z": 177.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_001_SPAR_REAR",
+      "part_a": "RIB-L-001",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": -120.0,
+        "z": 177.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_002_SPAR_MAIN",
+      "part_a": "RIB-L-002",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -240.0,
+        "z": 181.26
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_002_SPAR_REAR",
+      "part_a": "RIB-L-002",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": -240.0,
+        "z": 181.26
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_003_SPAR_MAIN",
+      "part_a": "RIB-L-003",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -360.0,
+        "z": 185.49
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_003_SPAR_REAR",
+      "part_a": "RIB-L-003",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": -360.0,
+        "z": 185.49
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_004_SPAR_MAIN",
+      "part_a": "RIB-L-004",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -480.0,
+        "z": 189.7
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_004_SPAR_REAR",
+      "part_a": "RIB-L-004",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": -480.0,
+        "z": 189.7
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_005_SPAR_MAIN",
+      "part_a": "RIB-L-005",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -600.0,
+        "z": 193.88
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_005_SPAR_REAR",
+      "part_a": "RIB-L-005",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": -600.0,
+        "z": 193.88
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_006_SPAR_MAIN",
+      "part_a": "RIB-L-006",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -720.0,
+        "z": 198.05
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_006_SPAR_REAR",
+      "part_a": "RIB-L-006",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": -720.0,
+        "z": 198.05
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_007_SPAR_MAIN",
+      "part_a": "RIB-L-007",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -840.0,
+        "z": 202.19
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_007_SPAR_REAR",
+      "part_a": "RIB-L-007",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": -840.0,
+        "z": 202.19
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_008_SPAR_MAIN",
+      "part_a": "RIB-L-008",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -960.0,
+        "z": 206.31
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_008_SPAR_REAR",
+      "part_a": "RIB-L-008",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 525.11,
+        "y": -960.0,
+        "z": 205.35
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_009_SPAR_MAIN",
+      "part_a": "RIB-L-009",
+      "part_b": "SPAR-L-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": -998.0,
+        "z": 207.47
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_L_009_SPAR_REAR",
+      "part_a": "RIB-L-009",
+      "part_b": "SPAR-L-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 523.21,
+        "y": -998.0,
+        "z": 206.11
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_000_SPAR_MAIN",
+      "part_a": "RIB-R-000",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 5.0,
+        "z": 172.89
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_000_SPAR_REAR",
+      "part_a": "RIB-R-000",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": 5.0,
+        "z": 173.72
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_001_SPAR_MAIN",
+      "part_a": "RIB-R-001",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 120.0,
+        "z": 177.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_001_SPAR_REAR",
+      "part_a": "RIB-R-001",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": 120.0,
+        "z": 177.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_002_SPAR_MAIN",
+      "part_a": "RIB-R-002",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 240.0,
+        "z": 181.26
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_002_SPAR_REAR",
+      "part_a": "RIB-R-002",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": 240.0,
+        "z": 181.26
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_003_SPAR_MAIN",
+      "part_a": "RIB-R-003",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 360.0,
+        "z": 185.49
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_003_SPAR_REAR",
+      "part_a": "RIB-R-003",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": 360.0,
+        "z": 185.49
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_004_SPAR_MAIN",
+      "part_a": "RIB-R-004",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 480.0,
+        "z": 189.7
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_004_SPAR_REAR",
+      "part_a": "RIB-R-004",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": 480.0,
+        "z": 189.7
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_005_SPAR_MAIN",
+      "part_a": "RIB-R-005",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 600.0,
+        "z": 193.88
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_005_SPAR_REAR",
+      "part_a": "RIB-R-005",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": 600.0,
+        "z": 193.88
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_006_SPAR_MAIN",
+      "part_a": "RIB-R-006",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 720.0,
+        "z": 198.05
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_006_SPAR_REAR",
+      "part_a": "RIB-R-006",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": 720.0,
+        "z": 198.05
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_007_SPAR_MAIN",
+      "part_a": "RIB-R-007",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 840.0,
+        "z": 202.19
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_007_SPAR_REAR",
+      "part_a": "RIB-R-007",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 530.0,
+        "y": 840.0,
+        "z": 202.19
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_008_SPAR_MAIN",
+      "part_a": "RIB-R-008",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 960.0,
+        "z": 206.31
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_008_SPAR_REAR",
+      "part_a": "RIB-R-008",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 525.11,
+        "y": 960.0,
+        "z": 205.35
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_009_SPAR_MAIN",
+      "part_a": "RIB-R-009",
+      "part_b": "SPAR-R-MAIN",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 450.0,
+        "y": 998.0,
+        "z": 207.47
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_RIB_R_009_SPAR_REAR",
+      "part_a": "RIB-R-009",
+      "part_b": "SPAR-R-REAR",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 523.21,
+        "y": 998.0,
+        "z": 206.11
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_HT_RIB_L_000_SPAR",
+      "part_a": "HT-RIB-L-000",
+      "part_b": "HT-SPAR-L-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": -153.0,
+        "z": 81.05
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_HT_RIB_L_001_SPAR",
+      "part_a": "HT-RIB-L-001",
+      "part_b": "HT-SPAR-L-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": -225.5,
+        "z": 81.77
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_HT_RIB_L_002_SPAR",
+      "part_a": "HT-RIB-L-002",
+      "part_b": "HT-SPAR-L-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": -299.5,
+        "z": 82.51
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_HT_RIB_R_000_SPAR",
+      "part_a": "HT-RIB-R-000",
+      "part_b": "HT-SPAR-R-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": 2.0,
+        "z": 81.05
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_HT_RIB_R_001_SPAR",
+      "part_a": "HT-RIB-R-001",
+      "part_b": "HT-SPAR-R-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": 74.5,
+        "z": 81.77
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_HT_RIB_R_002_SPAR",
+      "part_a": "HT-RIB-R-002",
+      "part_b": "HT-SPAR-R-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": 148.5,
+        "z": 82.51
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_VT_RIB_000_SPAR",
+      "part_a": "VT-RIB-000",
+      "part_b": "VT-SPAR-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": -8.95,
+        "z": 92.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_VT_RIB_001_SPAR",
+      "part_a": "VT-RIB-001",
+      "part_b": "VT-SPAR-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": -8.23,
+        "z": 169.5
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_VT_RIB_002_SPAR",
+      "part_a": "VT-RIB-002",
+      "part_b": "VT-SPAR-001",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 1037.0,
+        "y": -7.49,
+        "z": 248.5
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_000_LONG-UPPER-L",
+      "part_a": "FMR-000",
+      "part_b": "LONG-UPPER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 178.0,
+        "y": -55.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_000_LONG-UPPER-R",
+      "part_a": "FMR-000",
+      "part_b": "LONG-UPPER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 178.0,
+        "y": 49.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_000_LONG-LOWER-L",
+      "part_a": "FMR-000",
+      "part_b": "LONG-LOWER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 178.0,
+        "y": -55.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_000_LONG-LOWER-R",
+      "part_a": "FMR-000",
+      "part_b": "LONG-LOWER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 178.0,
+        "y": 49.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_001_LONG-UPPER-L",
+      "part_a": "FMR-001",
+      "part_b": "LONG-UPPER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 238.0,
+        "y": -55.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_001_LONG-UPPER-R",
+      "part_a": "FMR-001",
+      "part_b": "LONG-UPPER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 238.0,
+        "y": 49.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_001_LONG-LOWER-L",
+      "part_a": "FMR-001",
+      "part_b": "LONG-LOWER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 238.0,
+        "y": -55.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_001_LONG-LOWER-R",
+      "part_a": "FMR-001",
+      "part_b": "LONG-LOWER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 238.0,
+        "y": 49.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_002_LONG-UPPER-L",
+      "part_a": "FMR-002",
+      "part_b": "LONG-UPPER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 418.0,
+        "y": -55.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_002_LONG-UPPER-R",
+      "part_a": "FMR-002",
+      "part_b": "LONG-UPPER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 418.0,
+        "y": 49.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_002_LONG-LOWER-L",
+      "part_a": "FMR-002",
+      "part_b": "LONG-LOWER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 418.0,
+        "y": -55.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_002_LONG-LOWER-R",
+      "part_a": "FMR-002",
+      "part_b": "LONG-LOWER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 418.0,
+        "y": 49.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_003_LONG-UPPER-L",
+      "part_a": "FMR-003",
+      "part_b": "LONG-UPPER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 478.0,
+        "y": -55.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_003_LONG-UPPER-R",
+      "part_a": "FMR-003",
+      "part_b": "LONG-UPPER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 478.0,
+        "y": 49.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_003_LONG-LOWER-L",
+      "part_a": "FMR-003",
+      "part_b": "LONG-LOWER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 478.0,
+        "y": -55.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_003_LONG-LOWER-R",
+      "part_a": "FMR-003",
+      "part_b": "LONG-LOWER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 478.0,
+        "y": 49.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_004_LONG-UPPER-L",
+      "part_a": "FMR-004",
+      "part_b": "LONG-UPPER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 658.0,
+        "y": -55.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_004_LONG-UPPER-R",
+      "part_a": "FMR-004",
+      "part_b": "LONG-UPPER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 658.0,
+        "y": 49.0,
+        "z": 141.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_004_LONG-LOWER-L",
+      "part_a": "FMR-004",
+      "part_b": "LONG-LOWER-L",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 658.0,
+        "y": -55.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    },
+    {
+      "joint_id": "JNT_FMR_004_LONG-LOWER-R",
+      "part_a": "FMR-004",
+      "part_b": "LONG-LOWER-R",
+      "joint_type": "TAB_SLOT",
+      "location": {
+        "x": 658.0,
+        "y": 49.0,
+        "z": 42.0
+      },
+      "assembly_stage": "SUBASSEMBLY",
+      "status": "VALIDATED"
+    }
+  ],
+  "subassemblies": {
+    "MainWing_Left": [
+      "SPAR-L-MAIN",
+      "SPAR-L-REAR",
+      "RIB-L-000",
+      "RIB-L-001",
+      "RIB-L-002",
+      "RIB-L-003",
+      "RIB-L-004",
+      "RIB-L-005",
+      "RIB-L-006",
+      "RIB-L-007",
+      "RIB-L-008",
+      "RIB-L-009",
+      "HT-SPAR-L-001",
+      "HT-RIB-L-000",
+      "HT-RIB-L-001",
+      "HT-RIB-L-002"
+    ],
+    "MainWing_Right": [
+      "SPAR-R-MAIN",
+      "SPAR-R-REAR",
+      "RIB-R-000",
+      "RIB-R-001",
+      "RIB-R-002",
+      "RIB-R-003",
+      "RIB-R-004",
+      "RIB-R-005",
+      "RIB-R-006",
+      "RIB-R-007",
+      "RIB-R-008",
+      "RIB-R-009",
+      "HT-SPAR-R-001",
+      "HT-RIB-R-000",
+      "HT-RIB-R-001",
+      "HT-RIB-R-002"
+    ],
+    "Fuselage": [
+      "FMR-000",
+      "FMR-001",
+      "FMR-002",
+      "FMR-003",
+      "FMR-004",
+      "FMR-005",
+      "LONG-UPPER-L",
+      "LONG-UPPER-R",
+      "LONG-LOWER-L",
+      "LONG-LOWER-R",
+      "FIREWALL-001",
+      "WING-ATTACH-001"
+    ],
+    "VerticalTail": [
+      "VT-SPAR-001",
+      "VT-RIB-000",
+      "VT-RIB-001",
+      "VT-RIB-002"
+    ]
+  },
+  "assembly_steps_count": 5,
+  "assembly_steps": [
+    {
+      "step_id": 1,
+      "title": "Fuselage Primary Framework Assembly",
+      "subassembly": "Fuselage",
+      "description": "Slot fuselage formers into upper and lower longerons and secure the forward propulsion firewall.",
+      "inputs": [
+        "FMR-000",
+        "FMR-001",
+        "FMR-002",
+        "FMR-003",
+        "FMR-004",
+        "FMR-005",
+        "LONG-UPPER-L",
+        "LONG-UPPER-R",
+        "LONG-LOWER-L",
+        "LONG-LOWER-R",
+        "FIREWALL-001",
+        "WING-ATTACH-001"
+      ],
+      "outputs": [
+        "Fuselage_Subassembly"
+      ],
+      "dependencies": [],
+      "components": [
+        "FMR-000",
+        "FMR-001",
+        "FMR-002",
+        "FMR-003",
+        "FMR-004",
+        "FMR-005",
+        "LONG-UPPER-L",
+        "LONG-UPPER-R",
+        "LONG-LOWER-L",
+        "LONG-LOWER-R",
+        "FIREWALL-001",
+        "WING-ATTACH-001"
+      ],
+      "joints": [
+        "JNT_FMR_000_LONG-UPPER-L",
+        "JNT_FMR_000_LONG-UPPER-R",
+        "JNT_FMR_000_LONG-LOWER-L",
+        "JNT_FMR_000_LONG-LOWER-R",
+        "JNT_FMR_001_LONG-UPPER-L",
+        "JNT_FMR_001_LONG-UPPER-R",
+        "JNT_FMR_001_LONG-LOWER-L",
+        "JNT_FMR_001_LONG-LOWER-R",
+        "JNT_FMR_002_LONG-UPPER-L",
+        "JNT_FMR_002_LONG-UPPER-R",
+        "JNT_FMR_002_LONG-LOWER-L",
+        "JNT_FMR_002_LONG-LOWER-R",
+        "JNT_FMR_003_LONG-UPPER-L",
+        "JNT_FMR_003_LONG-UPPER-R",
+        "JNT_FMR_003_LONG-LOWER-L",
+        "JNT_FMR_003_LONG-LOWER-R",
+        "JNT_FMR_004_LONG-UPPER-L",
+        "JNT_FMR_004_LONG-UPPER-R",
+        "JNT_FMR_004_LONG-LOWER-L",
+        "JNT_FMR_004_LONG-LOWER-R"
+      ],
+      "warnings": [],
+      "status": "READY"
+    },
+    {
+      "step_id": 2,
+      "title": "Left Wing Spar and Rib Assembly",
+      "subassembly": "MainWing_Left",
+      "description": "Slot wing ribs (RIB-L-000 to RIB-L-009) onto the Main and Rear Wing Spars.",
+      "inputs": [
+        "SPAR-L-MAIN",
+        "SPAR-L-REAR",
+        "RIB-L-000",
+        "RIB-L-001",
+        "RIB-L-002",
+        "RIB-L-003",
+        "RIB-L-004",
+        "RIB-L-005",
+        "RIB-L-006",
+        "RIB-L-007",
+        "RIB-L-008",
+        "RIB-L-009",
+        "HT-SPAR-L-001",
+        "HT-RIB-L-000",
+        "HT-RIB-L-001",
+        "HT-RIB-L-002"
+      ],
+      "outputs": [
+        "MainWing_Left_Subassembly"
+      ],
+      "dependencies": [],
+      "components": [
+        "SPAR-L-MAIN",
+        "SPAR-L-REAR",
+        "RIB-L-000",
+        "RIB-L-001",
+        "RIB-L-002",
+        "RIB-L-003",
+        "RIB-L-004",
+        "RIB-L-005",
+        "RIB-L-006",
+        "RIB-L-007",
+        "RIB-L-008",
+        "RIB-L-009",
+        "HT-SPAR-L-001",
+        "HT-RIB-L-000",
+        "HT-RIB-L-001",
+        "HT-RIB-L-002"
+      ],
+      "joints": [
+        "JNT_RIB_L_000_SPAR_MAIN",
+        "JNT_RIB_L_000_SPAR_REAR",
+        "JNT_RIB_L_001_SPAR_MAIN",
+        "JNT_RIB_L_001_SPAR_REAR",
+        "JNT_RIB_L_002_SPAR_MAIN",
+        "JNT_RIB_L_002_SPAR_REAR",
+        "JNT_RIB_L_003_SPAR_MAIN",
+        "JNT_RIB_L_003_SPAR_REAR",
+        "JNT_RIB_L_004_SPAR_MAIN",
+        "JNT_RIB_L_004_SPAR_REAR",
+        "JNT_RIB_L_005_SPAR_MAIN",
+        "JNT_RIB_L_005_SPAR_REAR",
+        "JNT_RIB_L_006_SPAR_MAIN",
+        "JNT_RIB_L_006_SPAR_REAR",
+        "JNT_RIB_L_007_SPAR_MAIN",
+        "JNT_RIB_L_007_SPAR_REAR",
+        "JNT_RIB_L_008_SPAR_MAIN",
+        "JNT_RIB_L_008_SPAR_REAR",
+        "JNT_RIB_L_009_SPAR_MAIN",
+        "JNT_RIB_L_009_SPAR_REAR",
+        "JNT_HT_RIB_L_000_SPAR",
+        "JNT_HT_RIB_L_001_SPAR",
+        "JNT_HT_RIB_L_002_SPAR"
+      ],
+      "warnings": [],
+      "status": "READY"
+    },
+    {
+      "step_id": 3,
+      "title": "Right Wing Spar and Rib Assembly",
+      "subassembly": "MainWing_Right",
+      "description": "Slot wing ribs (RIB-R-000 to RIB-R-009) onto the Main and Rear Wing Spars.",
+      "inputs": [
+        "SPAR-R-MAIN",
+        "SPAR-R-REAR",
+        "RIB-R-000",
+        "RIB-R-001",
+        "RIB-R-002",
+        "RIB-R-003",
+        "RIB-R-004",
+        "RIB-R-005",
+        "RIB-R-006",
+        "RIB-R-007",
+        "RIB-R-008",
+        "RIB-R-009",
+        "HT-SPAR-R-001",
+        "HT-RIB-R-000",
+        "HT-RIB-R-001",
+        "HT-RIB-R-002"
+      ],
+      "outputs": [
+        "MainWing_Right_Subassembly"
+      ],
+      "dependencies": [],
+      "components": [
+        "SPAR-R-MAIN",
+        "SPAR-R-REAR",
+        "RIB-R-000",
+        "RIB-R-001",
+        "RIB-R-002",
+        "RIB-R-003",
+        "RIB-R-004",
+        "RIB-R-005",
+        "RIB-R-006",
+        "RIB-R-007",
+        "RIB-R-008",
+        "RIB-R-009",
+        "HT-SPAR-R-001",
+        "HT-RIB-R-000",
+        "HT-RIB-R-001",
+        "HT-RIB-R-002"
+      ],
+      "joints": [
+        "JNT_RIB_R_000_SPAR_MAIN",
+        "JNT_RIB_R_000_SPAR_REAR",
+        "JNT_RIB_R_001_SPAR_MAIN",
+        "JNT_RIB_R_001_SPAR_REAR",
+        "JNT_RIB_R_002_SPAR_MAIN",
+        "JNT_RIB_R_002_SPAR_REAR",
+        "JNT_RIB_R_003_SPAR_MAIN",
+        "JNT_RIB_R_003_SPAR_REAR",
+        "JNT_RIB_R_004_SPAR_MAIN",
+        "JNT_RIB_R_004_SPAR_REAR",
+        "JNT_RIB_R_005_SPAR_MAIN",
+        "JNT_RIB_R_005_SPAR_REAR",
+        "JNT_RIB_R_006_SPAR_MAIN",
+        "JNT_RIB_R_006_SPAR_REAR",
+        "JNT_RIB_R_007_SPAR_MAIN",
+        "JNT_RIB_R_007_SPAR_REAR",
+        "JNT_RIB_R_008_SPAR_MAIN",
+        "JNT_RIB_R_008_SPAR_REAR",
+        "JNT_RIB_R_009_SPAR_MAIN",
+        "JNT_RIB_R_009_SPAR_REAR",
+        "JNT_HT_RIB_R_000_SPAR",
+        "JNT_HT_RIB_R_001_SPAR",
+        "JNT_HT_RIB_R_002_SPAR"
+      ],
+      "warnings": [],
+      "status": "READY"
+    },
+    {
+      "step_id": 4,
+      "title": "Tail Empennage Assembly",
+      "subassembly": "Tail",
+      "description": "Assemble horizontal stabilizer spars/ribs and vertical stabilizer framework.",
+      "inputs": [
+        "VT-SPAR-001",
+        "VT-RIB-000",
+        "VT-RIB-001",
+        "VT-RIB-002"
+      ],
+      "outputs": [
+        "Tail_Subassembly"
+      ],
+      "dependencies": [],
+      "components": [
+        "VT-SPAR-001",
+        "VT-RIB-000",
+        "VT-RIB-001",
+        "VT-RIB-002"
+      ],
+      "joints": [
+        "JNT_VT_RIB_000_SPAR",
+        "JNT_VT_RIB_001_SPAR",
+        "JNT_VT_RIB_002_SPAR"
+      ],
+      "warnings": [],
+      "status": "READY"
+    },
+    {
+      "step_id": 5,
+      "title": "Final Airframe Integration & Wing Attachment",
+      "subassembly": "Airframe",
+      "description": "Mount left and right wings to the fuselage using the 3D-printed attachment block and align tail empennage.",
+      "inputs": [
+        "Fuselage_Subassembly",
+        "MainWing_Left_Subassembly",
+        "MainWing_Right_Subassembly",
+        "Tail_Subassembly"
+      ],
+      "outputs": [
+        "Complete_Prototype_Airframe"
+      ],
+      "dependencies": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "components": [],
+      "joints": [],
+      "warnings": [],
+      "status": "READY"
+    }
+  ],
+  "laser_sheets": [
+    {
+      "sheet_id": "Sheet_01",
+      "material": "Aeroply_3mm",
+      "thickness_mm": 3.0,
+      "dimensions": "900 \u00d7 600 mm",
+      "part_count": 14,
+      "utilization_percent": 5.34,
+      "parts": [
+        "VT-SPAR-001",
+        "SPAR-L-REAR",
+        "SPAR-R-REAR",
+        "SPAR-L-MAIN",
+        "SPAR-R-MAIN",
+        "FMR-002",
+        "FMR-003",
+        "FMR-004",
+        "FMR-001",
+        "FMR-000",
+        "HT-SPAR-L-001",
+        "HT-SPAR-R-001",
+        "FMR-005",
+        "FIREWALL-001"
+      ],
+      "dxf_path": "Sheet_01.dxf",
+      "svg_path": "Sheet_01.svg"
+    },
+    {
+      "sheet_id": "Sheet_02",
+      "material": "Balsa_3mm",
+      "thickness_mm": 3.0,
+      "dimensions": "900 \u00d7 600 mm",
+      "part_count": 33,
+      "utilization_percent": 27.34,
+      "parts": [
+        "RIB-L-000",
+        "RIB-R-000",
+        "RIB-L-001",
+        "RIB-R-001",
+        "RIB-L-002",
+        "RIB-R-002",
+        "RIB-L-003",
+        "RIB-R-003",
+        "RIB-L-004",
+        "RIB-R-004",
+        "RIB-L-005",
+        "RIB-R-005",
+        "LONG-LOWER-L",
+        "LONG-LOWER-R",
+        "LONG-UPPER-L",
+        "LONG-UPPER-R",
+        "RIB-L-006",
+        "RIB-R-006",
+        "RIB-L-007",
+        "RIB-R-007",
+        "RIB-L-008",
+        "RIB-R-008",
+        "RIB-L-009",
+        "RIB-R-009",
+        "HT-RIB-L-000",
+        "HT-RIB-R-000",
+        "HT-RIB-L-001",
+        "HT-RIB-R-001",
+        "HT-RIB-L-002",
+        "HT-RIB-R-002",
+        "VT-RIB-000",
+        "VT-RIB-001",
+        "VT-RIB-002"
+      ],
+      "dxf_path": "Sheet_02.dxf",
+      "svg_path": "Sheet_02.svg"
+    }
+  ],
+  "printable_packages": [
+    {
+      "part_id": "PRINT-WING-ATTACH-001",
+      "source_manufacturing_part_id": "WING-ATTACH-001",
+      "material": "PLA_Standard",
+      "dimensions": [
+        200.0,
+        104.814,
+        12.0
+      ],
+      "stl_path": "models\\TW-FW-20260921-215327\\v1\\print\\PRINT-WING-ATTACH-001.stl",
+      "volume_mm3": 0.0
+    }
+  ],
+  "build_validation": {
+    "is_valid": true,
+    "status": "READY",
+    "checks_passed": [
+      "Part completeness verified: 48 parts recorded.",
+      "No duplicate part IDs detected.",
+      "All physical parts have corresponding laser sheet or 3D print artifacts.",
+      "No orphan fabrication artifacts detected.",
+      "Material and thickness specifications are 100% consistent.",
+      "Assembly dependency graph verified: 5 sequential stages, zero cyclic dependencies."
+    ],
+    "warnings": [],
+    "errors": [],
+    "missing_artifacts": [],
+    "orphan_parts": [],
+    "orphan_artifacts": [],
+    "duplicate_part_ids": [],
+    "quantity_conflicts": [],
+    "material_conflicts": [],
+    "thickness_conflicts": []
+  }
+}

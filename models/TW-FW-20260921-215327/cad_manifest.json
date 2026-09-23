@@ -1,0 +1,837 @@
+{
+  "design_id": "TW-FW-20260921-215327",
+  "manifest": {
+    "case_id": "TW-FW-20260921-215327",
+    "parameters": {
+      "wing_position": {
+        "value": "high",
+        "unit": "",
+        "source": "TW-FW-20260921-215327",
+        "section": "Configuration",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "propulsion_layout": {
+        "value": "tractor",
+        "unit": "",
+        "source": "TW-FW-20260921-215327",
+        "section": "Configuration",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "cross_section_type": {
+        "value": "ellipse",
+        "unit": "",
+        "source": "",
+        "section": "",
+        "status": "DERIVED",
+        "original_value": null,
+        "original_unit": null
+      },
+      "wing_span": {
+        "value": 2000.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Wing",
+        "status": "EXPLICIT",
+        "original_value": 2.0,
+        "original_unit": "m"
+      },
+      "wing_root_chord": {
+        "value": 250.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Wing",
+        "status": "EXPLICIT",
+        "original_value": 0.25,
+        "original_unit": "m"
+      },
+      "wing_tip_chord": {
+        "value": 150.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Wing",
+        "status": "EXPLICIT",
+        "original_value": 0.15,
+        "original_unit": "m"
+      },
+      "wing_sweep_deg": {
+        "value": 0.0,
+        "unit": "degrees",
+        "source": "TW-FW-20260921-215327",
+        "section": "Wing",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "wing_dihedral_deg": {
+        "value": 2.0,
+        "unit": "degrees",
+        "source": "TW-FW-20260921-215327",
+        "section": "Wing",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "wing_incidence_deg": {
+        "value": 1.5,
+        "unit": "degrees",
+        "source": "TW-FW-20260921-215327",
+        "section": "Wing",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "wing_root_airfoil": {
+        "value": "NACA 2412",
+        "unit": "",
+        "source": "TW-FW-20260921-215327",
+        "section": "Wing",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "wing_tip_airfoil": {
+        "value": "NACA 2412",
+        "unit": "",
+        "source": "TW-FW-20260921-215327",
+        "section": "Wing",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "fuselage_length": {
+        "value": 1200.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Fuselage",
+        "status": "EXPLICIT",
+        "original_value": 1.2,
+        "original_unit": "m"
+      },
+      "fuselage_width": {
+        "value": 160.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Fuselage",
+        "status": "EXPLICIT",
+        "original_value": 0.16,
+        "original_unit": "m"
+      },
+      "fuselage_height": {
+        "value": 180.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Fuselage",
+        "status": "EXPLICIT",
+        "original_value": 0.18,
+        "original_unit": "m"
+      },
+      "ht_span": {
+        "value": 600.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Tail",
+        "status": "EXPLICIT",
+        "original_value": 0.6,
+        "original_unit": "m"
+      },
+      "ht_root_chord": {
+        "value": 150.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Tail",
+        "status": "EXPLICIT",
+        "original_value": 0.15,
+        "original_unit": "m"
+      },
+      "ht_tip_chord": {
+        "value": 100.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Tail",
+        "status": "EXPLICIT",
+        "original_value": 0.1,
+        "original_unit": "m"
+      },
+      "ht_sweep_deg": {
+        "value": 0.0,
+        "unit": "degrees",
+        "source": "",
+        "section": "",
+        "status": "DERIVED",
+        "original_value": null,
+        "original_unit": null
+      },
+      "ht_incidence_deg": {
+        "value": 0.0,
+        "unit": "degrees",
+        "source": "",
+        "section": "",
+        "status": "DERIVED",
+        "original_value": null,
+        "original_unit": null
+      },
+      "ht_airfoil": {
+        "value": "NACA 0012",
+        "unit": "",
+        "source": "TW-FW-20260921-215327",
+        "section": "Tail",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "vt_height": {
+        "value": 320.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Tail",
+        "status": "EXPLICIT",
+        "original_value": 0.32,
+        "original_unit": "m"
+      },
+      "vt_root_chord": {
+        "value": 150.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Tail",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "vt_tip_chord": {
+        "value": 100.0,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Tail",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "vt_sweep_deg": {
+        "value": 0.0,
+        "unit": "degrees",
+        "source": "",
+        "section": "",
+        "status": "DERIVED",
+        "original_value": null,
+        "original_unit": null
+      },
+      "vt_airfoil": {
+        "value": "NACA 0012",
+        "unit": "",
+        "source": "TW-FW-20260921-215327",
+        "section": "Tail",
+        "status": "EXPLICIT",
+        "original_value": null,
+        "original_unit": null
+      },
+      "propeller_diameter": {
+        "value": 304.79999999999995,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Propulsion",
+        "status": "DERIVED",
+        "original_value": 12.0,
+        "original_unit": "in"
+      },
+      "propeller_pitch": {
+        "value": 152.39999999999998,
+        "unit": "mm",
+        "source": "TW-FW-20260921-215327",
+        "section": "Propulsion",
+        "status": "DERIVED",
+        "original_value": 6.0,
+        "original_unit": "in"
+      }
+    },
+    "structural_profile": {
+      "wing_primary_spar_chord_ratio": {
+        "value": 0.25,
+        "source": "STRUCTURAL_RULE"
+      },
+      "wing_secondary_spar_chord_ratio": {
+        "value": 0.65,
+        "source": "STRUCTURAL_RULE"
+      },
+      "wing_spar_thickness": {
+        "value": 3.0,
+        "source": "STRUCTURAL_RULE"
+      },
+      "wing_rib_spacing": {
+        "value": 120.0,
+        "source": "STRUCTURAL_RULE"
+      },
+      "wing_rib_thickness": {
+        "value": 2.5,
+        "source": "STRUCTURAL_RULE"
+      },
+      "fuselage_former_spacing": {
+        "value": 150.0,
+        "source": "STRUCTURAL_RULE"
+      },
+      "fuselage_former_thickness": {
+        "value": 4.0,
+        "source": "STRUCTURAL_RULE"
+      },
+      "fuselage_longeron_thickness": {
+        "value": 6.0,
+        "source": "STRUCTURAL_RULE"
+      },
+      "reference_material_density_g_mm3": {
+        "value": 0.00015,
+        "source": "REFERENCE_MATERIAL"
+      },
+      "estimated_structural_mass_g": {
+        "value": 142.2338279475606,
+        "source": "DERIVED"
+      },
+      "structural_cg_location": {
+        "value": [
+          543.4888835929848,
+          1.964498974097789e-06,
+          150.47993772393903
+        ],
+        "source": "DERIVED"
+      }
+    }
+  },
+  "validation_errors": [],
+  "cad_blocking_errors": [],
+  "non_cad_blocking_errors": [],
+  "dimensional_validation": [
+    {
+      "parameter": "overall wing span",
+      "required": 2000.0,
+      "generated": 2000.0000002000006,
+      "deviation": 2.0000061340397224e-07,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "left wing span",
+      "required": 1000.0,
+      "generated": 1000.0000001000003,
+      "deviation": 1.0000030670198612e-07,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "right wing span",
+      "required": 1000.0,
+      "generated": 1000.0000001000003,
+      "deviation": 1.0000030670198612e-07,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "fuselage length",
+      "required": 1200.0,
+      "generated": 1200.0000002000115,
+      "deviation": 2.0001152734039351e-07,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "fuselage width",
+      "required": 160.0,
+      "generated": 160.16629866863408,
+      "deviation": 0.16629866863408438,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "fuselage height",
+      "required": 180.0,
+      "generated": 180.18708603132262,
+      "deviation": 0.1870860313226217,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "horizontal tail span",
+      "required": 600.0,
+      "generated": 600.0000002000003,
+      "deviation": 2.0000027234345907e-07,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "vertical tail height",
+      "required": 320.0,
+      "generated": 320.0000002000003,
+      "deviation": 2.0000027234345907e-07,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "propeller diameter",
+      "required": 304.79999999999995,
+      "generated": 304.79999999999995,
+      "deviation": 0.0,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "payload bay length",
+      "required": 250.0,
+      "generated": 250.0,
+      "deviation": 0.0,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "payload bay width",
+      "required": 140.0,
+      "generated": 140.0,
+      "deviation": 0.0,
+      "tolerance": 1.0,
+      "result": "PASS"
+    },
+    {
+      "parameter": "payload bay height",
+      "required": 120.0,
+      "generated": 120.0,
+      "deviation": 0.0,
+      "tolerance": 1.0,
+      "result": "PASS"
+    }
+  ],
+  "structural_components_count": 48,
+  "structural_components": [
+    {
+      "label": "MainWing_Left_MainSpar",
+      "volume_mm3": 71302.1,
+      "bbox": {
+        "size_x": 28.0,
+        "size_y": 1000.0,
+        "size_z": 58.72
+      }
+    },
+    {
+      "label": "MainWing_Left_RearSpar",
+      "volume_mm3": 49649.16,
+      "bbox": {
+        "size_x": 68.0,
+        "size_y": 1000.0,
+        "size_z": 54.27
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_000",
+      "volume_mm3": 12391.94,
+      "bbox": {
+        "size_x": 249.69,
+        "size_y": 2.5,
+        "size_z": 30.04
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_001",
+      "volume_mm3": 11259.52,
+      "bbox": {
+        "size_x": 238.21,
+        "size_y": 2.5,
+        "size_z": 28.66
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_002",
+      "volume_mm3": 10135.77,
+      "bbox": {
+        "size_x": 226.22,
+        "size_y": 2.5,
+        "size_z": 27.23
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_003",
+      "volume_mm3": 9071.12,
+      "bbox": {
+        "size_x": 214.23,
+        "size_y": 2.5,
+        "size_z": 25.82
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_004",
+      "volume_mm3": 8065.52,
+      "bbox": {
+        "size_x": 202.23,
+        "size_y": 2.5,
+        "size_z": 24.41
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_005",
+      "volume_mm3": 7122.93,
+      "bbox": {
+        "size_x": 190.24,
+        "size_y": 2.5,
+        "size_z": 23.0
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_006",
+      "volume_mm3": 6231.39,
+      "bbox": {
+        "size_x": 178.23,
+        "size_y": 2.5,
+        "size_z": 21.6
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_007",
+      "volume_mm3": 5405.82,
+      "bbox": {
+        "size_x": 166.23,
+        "size_y": 2.5,
+        "size_z": 20.2
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_008",
+      "volume_mm3": 4635.79,
+      "bbox": {
+        "size_x": 154.22,
+        "size_y": 2.5,
+        "size_z": 18.79
+      }
+    },
+    {
+      "label": "MainWing_Left_Rib_009",
+      "volume_mm3": 4401.81,
+      "bbox": {
+        "size_x": 150.42,
+        "size_y": 2.5,
+        "size_z": 18.35
+      }
+    },
+    {
+      "label": "MainWing_Right_MainSpar",
+      "volume_mm3": 71302.1,
+      "bbox": {
+        "size_x": 28.0,
+        "size_y": 1000.0,
+        "size_z": 58.72
+      }
+    },
+    {
+      "label": "MainWing_Right_RearSpar",
+      "volume_mm3": 49649.16,
+      "bbox": {
+        "size_x": 68.0,
+        "size_y": 1000.0,
+        "size_z": 54.27
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_000",
+      "volume_mm3": 12391.94,
+      "bbox": {
+        "size_x": 249.69,
+        "size_y": 2.5,
+        "size_z": 30.04
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_001",
+      "volume_mm3": 11259.52,
+      "bbox": {
+        "size_x": 238.21,
+        "size_y": 2.5,
+        "size_z": 28.66
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_002",
+      "volume_mm3": 10135.77,
+      "bbox": {
+        "size_x": 226.22,
+        "size_y": 2.5,
+        "size_z": 27.23
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_003",
+      "volume_mm3": 9071.12,
+      "bbox": {
+        "size_x": 214.23,
+        "size_y": 2.5,
+        "size_z": 25.82
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_004",
+      "volume_mm3": 8065.52,
+      "bbox": {
+        "size_x": 202.23,
+        "size_y": 2.5,
+        "size_z": 24.41
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_005",
+      "volume_mm3": 7122.93,
+      "bbox": {
+        "size_x": 190.24,
+        "size_y": 2.5,
+        "size_z": 23.0
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_006",
+      "volume_mm3": 6231.39,
+      "bbox": {
+        "size_x": 178.23,
+        "size_y": 2.5,
+        "size_z": 21.6
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_007",
+      "volume_mm3": 5405.82,
+      "bbox": {
+        "size_x": 166.23,
+        "size_y": 2.5,
+        "size_z": 20.2
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_008",
+      "volume_mm3": 4635.79,
+      "bbox": {
+        "size_x": 154.22,
+        "size_y": 2.5,
+        "size_z": 18.79
+      }
+    },
+    {
+      "label": "MainWing_Right_Rib_009",
+      "volume_mm3": 4401.81,
+      "bbox": {
+        "size_x": 150.42,
+        "size_y": 2.5,
+        "size_z": 18.35
+      }
+    },
+    {
+      "label": "Fuselage_Former_000",
+      "volume_mm3": 9696.51,
+      "bbox": {
+        "size_x": 4.0,
+        "size_y": 141.51,
+        "size_z": 159.19
+      }
+    },
+    {
+      "label": "Fuselage_Former_001",
+      "volume_mm3": 21105.61,
+      "bbox": {
+        "size_x": 4.0,
+        "size_y": 156.65,
+        "size_z": 176.23
+      }
+    },
+    {
+      "label": "Fuselage_Former_002",
+      "volume_mm3": 24532.86,
+      "bbox": {
+        "size_x": 4.0,
+        "size_y": 160.0,
+        "size_z": 180.0
+      }
+    },
+    {
+      "label": "Fuselage_Former_003",
+      "volume_mm3": 58477.89,
+      "bbox": {
+        "size_x": 4.0,
+        "size_y": 160.0,
+        "size_z": 180.0
+      }
+    },
+    {
+      "label": "Fuselage_Former_004",
+      "volume_mm3": 90477.89,
+      "bbox": {
+        "size_x": 4.0,
+        "size_y": 160.0,
+        "size_z": 180.0
+      }
+    },
+    {
+      "label": "Fuselage_Former_005",
+      "volume_mm3": 18096.08,
+      "bbox": {
+        "size_x": 4.0,
+        "size_y": 80.66,
+        "size_z": 72.68
+      }
+    },
+    {
+      "label": "Fuselage_Longeron_UpperLeft",
+      "volume_mm3": 13745.1,
+      "bbox": {
+        "size_x": 668.3,
+        "size_y": 6.0,
+        "size_z": 6.0
+      }
+    },
+    {
+      "label": "Fuselage_Longeron_UpperRight",
+      "volume_mm3": 13745.1,
+      "bbox": {
+        "size_x": 668.3,
+        "size_y": 6.0,
+        "size_z": 6.0
+      }
+    },
+    {
+      "label": "Fuselage_Longeron_LowerLeft",
+      "volume_mm3": 15583.87,
+      "bbox": {
+        "size_x": 724.73,
+        "size_y": 6.0,
+        "size_z": 6.0
+      }
+    },
+    {
+      "label": "Fuselage_Longeron_LowerRight",
+      "volume_mm3": 15583.87,
+      "bbox": {
+        "size_x": 724.73,
+        "size_y": 6.0,
+        "size_z": 6.0
+      }
+    },
+    {
+      "label": "Motor_Firewall",
+      "volume_mm3": 715.23,
+      "bbox": {
+        "size_x": 6.0,
+        "size_y": 14.86,
+        "size_z": 16.72
+      }
+    },
+    {
+      "label": "HorizontalTail_Left_Spar",
+      "volume_mm3": 8922.33,
+      "bbox": {
+        "size_x": 19.5,
+        "size_y": 300.0,
+        "size_z": 17.88
+      }
+    },
+    {
+      "label": "HorizontalTail_Left_Rib_000",
+      "volume_mm3": 3535.94,
+      "bbox": {
+        "size_x": 149.42,
+        "size_y": 2.0,
+        "size_z": 17.93
+      }
+    },
+    {
+      "label": "HorizontalTail_Left_Rib_001",
+      "volume_mm3": 2473.71,
+      "bbox": {
+        "size_x": 125.24,
+        "size_y": 2.0,
+        "size_z": 15.02
+      }
+    },
+    {
+      "label": "HorizontalTail_Left_Rib_002",
+      "volume_mm3": 1584.65,
+      "bbox": {
+        "size_x": 100.56,
+        "size_y": 2.0,
+        "size_z": 12.06
+      }
+    },
+    {
+      "label": "HorizontalTail_Right_Spar",
+      "volume_mm3": 8922.33,
+      "bbox": {
+        "size_x": 19.5,
+        "size_y": 300.0,
+        "size_z": 17.88
+      }
+    },
+    {
+      "label": "HorizontalTail_Right_Rib_000",
+      "volume_mm3": 3535.94,
+      "bbox": {
+        "size_x": 149.42,
+        "size_y": 2.0,
+        "size_z": 17.93
+      }
+    },
+    {
+      "label": "HorizontalTail_Right_Rib_001",
+      "volume_mm3": 2473.71,
+      "bbox": {
+        "size_x": 125.24,
+        "size_y": 2.0,
+        "size_z": 15.02
+      }
+    },
+    {
+      "label": "HorizontalTail_Right_Rib_002",
+      "volume_mm3": 1584.65,
+      "bbox": {
+        "size_x": 100.56,
+        "size_y": 2.0,
+        "size_z": 12.06
+      }
+    },
+    {
+      "label": "VerticalTail_MainSpar",
+      "volume_mm3": 9517.15,
+      "bbox": {
+        "size_x": 19.5,
+        "size_y": 17.88,
+        "size_z": 320.0
+      }
+    },
+    {
+      "label": "VerticalTail_Rib_000",
+      "volume_mm3": 3535.07,
+      "bbox": {
+        "size_x": 149.46,
+        "size_y": 17.93,
+        "size_z": 2.0
+      }
+    },
+    {
+      "label": "VerticalTail_Rib_001",
+      "volume_mm3": 2471.41,
+      "bbox": {
+        "size_x": 125.23,
+        "size_y": 15.02,
+        "size_z": 2.0
+      }
+    },
+    {
+      "label": "VerticalTail_Rib_002",
+      "volume_mm3": 1583.94,
+      "bbox": {
+        "size_x": 100.53,
+        "size_y": 12.06,
+        "size_z": 2.0
+      }
+    },
+    {
+      "label": "Wing_Fuselage_Attachment",
+      "volume_mm3": 216978.94,
+      "bbox": {
+        "size_x": 200.0,
+        "size_y": 104.81,
+        "size_z": 12.0
+      }
+    }
+  ]
+}
