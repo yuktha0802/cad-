@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦅 TorqWings CAD Studio
+# TorqWings CAD Studio
 ### Part 2: Engineering Specification → Prototype-Ready Aircraft CAD System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
